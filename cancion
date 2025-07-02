@@ -1,0 +1,107 @@
+[{
+  "_id": {
+    "$oid": "685c524c9e41b25d35f2a2a5"
+  },
+  "titulo": "Aneurysm",
+  "artista": "Nirvana",
+  "genero": [
+    "Grunge",
+    "Rock"
+  ],
+  "album": "Incesticide",
+  "albumCover": "https://jpeg.com/albumCover/incesticide.jpeg",
+  "pista": "https://mp3.com/pista/aneurysmKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "685c56549e41b25d35f2a2b0"
+  },
+  "titulo": "Guess",
+  "artista": [
+    "Charli xcx, Billie Eilish"
+  ],
+  "genero": [
+    "Pop",
+    "Electronico"
+  ],
+  "album": "Brat",
+  "albumCover": "https://png.com/albumCover/BRATcover.png",
+  "pista": "https://mp3.com/pista/guessKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "685c5b5d9e41b25d35f2a2bf"
+  },
+  "titulo": "Creep",
+  "artista": "Radiohead",
+  "genero": [
+    "Grunge",
+    "Rock"
+  ],
+  "album": "Pablo Honey",
+  "albumCover": "https://jpg.com/albumCover/pabloHoney.jpg",
+  "pista": "https://mp3.com/pista/creepKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "68658a63088a00a8156995a8"
+  },
+  "titulo": "Hey Baby",
+  "artista": "Pitbull",
+  "genero": [
+    "Pop",
+    "Electro pop"
+  ],
+  "album": "Planet Pit",
+  "albumCover": "https://jpg.com//albumCover/planetPit.jpg",
+  "pista": "https://mp3.com//pista/heyBabyKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "68658dd4088a00a8156995aa"
+  },
+  "titulo": "I Love It",
+  "artista": [
+    "Charli XCX, Icona Pop"
+  ],
+  "genero": "Pop",
+  "album": "Icona Pop",
+  "albumCover": "https://jpeg.com/albumCover/iconaPop.jpeg",
+  "pista": "https://mp3.com/pista/iLoveItKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "68659059088a00a8156995ac"
+  },
+  "titulo": "Una Cerveza",
+  "artista": "Rafaga",
+  "genero": "Cumbia",
+  "album": "Una Cerveza",
+  "albumCover": "https://jpeg.com/albumCover/unaCerveza.jpeg",
+  "pista": "https://mp3.com/pista/unaCervezaKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "68659194088a00a8156995ae"
+  },
+  "titulo": "Mentirosa",
+  "artista": "Rafaga",
+  "genero": "Cumbia",
+  "album": "Imparables",
+  "albumCover": "https://jpeg.com/albumCover/imparables.jpeg",
+  "pista": "https://mp3.com/pista/mentirosaKaraoke.mp3"
+},{
+  "_id": {
+    "$oid": "6865939f088a00a8156995b0"
+  },
+  "titulo": "Ahora Te Puedes Marchar",
+  "artista": "Luis Miguel",
+  "genero": "Pop",
+  "album": "Soy Como Quiero Ser",
+  "albumCover": "https://jpg.com/albumCover/soycomoquieroser.jpg",
+  "pista": "https://mp3.com/pista/ahoraTePuedesMarchar.mp3"
+},{
+  "_id": {
+    "$oid": "68659658088a00a8156995b2"
+  },
+  "titulo": "You Give Love a Bad Name",
+  "artista": "Bon Jovi",
+  "genero": "Rock",
+  "album": "Slippery When Wet",
+  "albumCover": "https://jpeg.com/albumCover/slipperywhenwet.jpeg",
+  "pista": "https://mp3.com/pista/yougiveloveabadnameKaraoke.mp3"
+}]
