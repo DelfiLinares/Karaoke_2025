@@ -1,7 +1,10 @@
-body {
+body{
+    background-color:#14071f;
+}
+
+main {
     height: 100vh;
     width: 100vw;
-    background-color:#14071f;
     margin: 0rem;
     overflow: hidden;
   }
@@ -29,5 +32,18 @@ body {
     height: 56vmin;
     object-fit: cover;
   }
+
+.generosLista{
+  justify-self: center;
+  padding:2.5%;
+}
   
+.generosLista a{
+  text-decoration: none;
+  color: #9a76b8;
+  font-weight: bold;
+}
  
+.generosLista a:hover{
+  color: #ffffff;
+}
