@@ -40,68 +40,80 @@
   "albumCover": "https://jpg.com/albumCover/pabloHoney.jpg",
   "pista": "https://mp3.com/pista/creepKaraoke.mp3"
 },{
-  "_id": {
-    "$oid": "68658a63088a00a8156995a8"
-  },
-  "titulo": "Hey Baby",
-  "artista": "Pitbull",
+  "_id": "68a6139c41ac8857c890ae28",
+  "titulo": "Love Story",
+  "artista": "Taylor Swift",
+  "genero": "Country pop",
+  "album": "Fearless",
+  "albumCover": "https://png.com/albumCover/Fearless.png",
+  "pista": "https://mp3.com/pista/LoveStory.mp3"
+},{
+  "_id": "68a6152841ac8857c890ae2c",
+  "titulo": "Shake it off",
+  "artista": "Taylor Swift",
+  "genero": "Dance-pop",
+  "album": "1989",
+  "albumCover": "https://png.com/albumCover/1989.png",
+  "pista": "https://mp3.com/pista/Shakeitoff.mp3"
+},{
+  "_id": "68a6179641ac8857c890ae2f",
+  "titulo": "Blank Space",
+  "artista": "Taylor Swift",
+  "genero": "pop",
+  "album": "1989",
+  "albumCover": "https://png.com/albumCover/1989.png",
+  "pista": "https://mp3.com/pista/Blankspace.mp3"
+},{
+  "_id": "68a6192e41ac8857c890ae31",
+  "titulo": "Bad Blood",
+  "artista": "Taylor Swift",
+  "genero": "Electro pop",
+  "album": "1989",
+  "albumCover": "https://png.com/albumCover/1989.png",
+  "pista": "https://mp3.com/pista/Badblood.mp3"
+},{
+  "_id": "68a6197c41ac8857c890ae32",
+  "titulo": "Cruel Summer",
+  "artista": "Taylor Swift",
+  "genero": "pop",
+  "album": "Lover",
+  "albumCover": "https://png.com/albumCover/lover.png",
+  "pista": "https://mp3.com/pista/Cruelsummer.mp3"
+},{
+  "_id": "68a61c5341ac8857c890ae34",
+  "titulo": "Give Me Everything",
+  "artista": [
+    "Pitbull",
+    "AFROJACK",
+    "Ne-Yo"
+  ],
   "genero": [
-    "Pop",
-    "Electro pop"
+    "Dance pop",
+    "Teen pop"
   ],
   "album": "Planet Pit",
-  "albumCover": "https://jpg.com//albumCover/planetPit.jpg",
-  "pista": "https://mp3.com//pista/heyBabyKaraoke.mp3"
+  "albumCover": "https://jpg.com/albumCover/planetpit.jpg",
+  "pista": "https://mp3.com/pista/Givemeeverything.mp3"
 },{
-  "_id": {
-    "$oid": "68658dd4088a00a8156995aa"
-  },
-  "titulo": "I Love It",
+  "_id": "68a61db141ac8857c890ae35",
+  "titulo": "Timber",
   "artista": [
-    "Charli XCX, Icona Pop"
+    "Pitbull",
+    "Kesha"
   ],
-  "genero": "Pop",
-  "album": "Icona Pop",
-  "albumCover": "https://jpeg.com/albumCover/iconaPop.jpeg",
-  "pista": "https://mp3.com/pista/iLoveItKaraoke.mp3"
+  "genero": [
+    "Indie",
+    "Ambient"
+  ],
+  "album": "Meltdown",
+  "albumCover": "https://jpg.com/albumCover/meltdown.jpg",
+  "pista": "https://mp3.com/pista/Timber.mp3"
 },{
-  "_id": {
-    "$oid": "68659059088a00a8156995ac"
-  },
-  "titulo": "Una Cerveza",
-  "artista": "Rafaga",
-  "genero": "Cumbia",
-  "album": "Una Cerveza",
-  "albumCover": "https://jpeg.com/albumCover/unaCerveza.jpeg",
-  "pista": "https://mp3.com/pista/unaCervezaKaraoke.mp3"
-},{
-  "_id": {
-    "$oid": "68659194088a00a8156995ae"
-  },
-  "titulo": "Mentirosa",
-  "artista": "Rafaga",
-  "genero": "Cumbia",
-  "album": "Imparables",
-  "albumCover": "https://jpeg.com/albumCover/imparables.jpeg",
-  "pista": "https://mp3.com/pista/mentirosaKaraoke.mp3"
-},{
-  "_id": {
-    "$oid": "6865939f088a00a8156995b0"
-  },
-  "titulo": "Ahora Te Puedes Marchar",
-  "artista": "Luis Miguel",
-  "genero": "Pop",
-  "album": "Soy Como Quiero Ser",
-  "albumCover": "https://jpg.com/albumCover/soycomoquieroser.jpg",
-  "pista": "https://mp3.com/pista/ahoraTePuedesMarchar.mp3"
-},{
-  "_id": {
-    "$oid": "68659658088a00a8156995b2"
-  },
-  "titulo": "You Give Love a Bad Name",
-  "artista": "Bon Jovi",
-  "genero": "Rock",
-  "album": "Slippery When Wet",
-  "albumCover": "https://jpeg.com/albumCover/slipperywhenwet.jpeg",
-  "pista": "https://mp3.com/pista/yougiveloveabadnameKaraoke.mp3"
+  "_id": "68a61ebf41ac8857c890ae36",
+  "titulo": "I know you want me (Calle Ocho)",
+  "artista": "Pitbull",
+  "genero": "pop",
+  "album": "Pitbull starring in rebelution",
+  "albumCover": "https://png.com/albumCover/rebelution.png",
+  "pista": "https://mp3.com/pista/Youwantme.mp3"
 }]
