@@ -1,0 +1,77 @@
+body {
+    background-color: #14071f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+main {
+    padding: 3rem 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoArtista {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contenedorCanciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 70vh; 
+    overflow-y: auto; 
+    padding-right: 15px;
+}
+
+.itemCancion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #2a1a3a;
+    border: 1px solid #453553;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.itemCancion:hover {
+    background-color: #3c2a52;
+}
+
+h3 {
+    color: #e3e3e3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+h5 {
+    color: #9a8c98;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+.contenedorCanciones::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contenedorCanciones::-webkit-scrollbar-track {
+    background: #1f122c;
+    border-radius: 10px;
+}
+
+.contenedorCanciones::-webkit-scrollbar-thumb {
+    background-color: #5d4a6e;
+    border-radius: 10px;
+    border: 2px solid #1f122c;
+}
+
+.contenedorCanciones::-webkit-scrollbar-thumb:hover {
+    background-color: #725a8a;
+}

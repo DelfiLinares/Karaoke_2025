@@ -1,37 +1,37 @@
 body{
-    background-color:#14071f;
+  background-color:#14071f;
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
-    margin: 0rem;
-    overflow: hidden;
-  }
+  height: 100vh;
+  width: 100vw;
+  margin: 0rem;
+  overflow: hidden;
+}
   
-  #image-track {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(0%, -50%); 
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
     user-select: none; 
-    align-items: center;
-  }
+  align-items: center;
+}
   
-    #image-track > .image:hover{
-    cursor:pointer;
-    box-shadow: 0 0 40px 0 #453255;
-    width: 50vmin;
-    height: 60vmin;
-  }
+#image-track > a .image:hover{
+  cursor:pointer;
+  box-shadow: 0 0 40px 0 #453255;
+  width: 50vmin;
+  height: 60vmin;
+}
 
-  #image-track > .image {
+#image-track > a .image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-  }
+}
 
 .generosLista{
   justify-self: center;
