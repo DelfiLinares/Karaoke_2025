@@ -1,11 +1,16 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     background-color: #14071f;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Fuente base para toda la página */
     color: white;
+    overflow: hidden; /* Evita el scroll en el body */
 }
 
 main {
-    padding: 3rem 0;
+    padding: 0; /* Eliminamos el padding del main */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,17 +19,42 @@ main {
 
 .fotoArtista {
     width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    height: 100vh; /* La imagen ocupa toda la altura */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 0;
+    box-shadow: none;
 }
+
+/* Estilos para el texto central */
+.texto-central {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.nombre-artista {
+    font-family: 'Great Vibes', cursive; /* Fuente elegante para el nombre */
+    font-size: 6rem;
+    color: #f0e6ff;
+    text-shadow: 0 0 15px rgba(230, 204, 255, 0.7);
+}
+
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #9a8c98;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
 
 .contenedorCanciones {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-height: 70vh; 
+    height: 100vh; /* El contenedor ocupa toda la altura */
     overflow-y: auto; 
-    padding-right: 15px;
+    padding: 3rem 2rem; /* Añadimos padding interno para que las canciones no se peguen a los bordes */
 }
 
 .itemCancion {
@@ -36,27 +66,33 @@ main {
     border: 1px solid #453553;
     border-radius: 10px;
     text-align: left;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0; /* Reseteamos márgenes del .row */
+    width: 100%; /* Aseguramos que ocupe todo el ancho del contenedor */
 }
 
 .itemCancion:hover {
     background-color: #3c2a52;
+    cursor: pointer;
+    transform: scale(1.03); /* Efecto sutil al pasar el mouse */
 }
 
-h3 {
+.itemCancion h3 {
     color: #e3e3e3;
     font-weight: 600;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
+    margin-bottom: 0;
 }
 
-h5 {
+.itemCancion h5 {
     color: #9a8c98;
     font-weight: 400;
     font-size: 0.9rem;
+    margin-bottom: 0;
 }
 
-
+/* Estilos de la barra de scroll */
 .contenedorCanciones::-webkit-scrollbar {
     width: 8px;
 }
