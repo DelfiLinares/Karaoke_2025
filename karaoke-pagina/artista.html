@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Swift - Karaoke</title>
-    <!-- Google Fonts para una tipografía más elegante -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -16,57 +15,25 @@
     <main>
         <div class="container-fluid">
             <div class="row g-0">
-                <!-- Columna de la Imagen -->
                 <div class="col-5">
-                    <img class="fotoArtista" src="img/tay.jpeg" draggable="false" />
+                    <img class="fotoArtista" src="" draggable="false" />
                 </div>
                 
-                <!-- Columna de Texto Central -->
                 <div class="col-2 d-flex flex-column justify-content-center align-items-center texto-central">
-                    <h1 class="nombre-artista">Taylor</h1>
+                    <h1 class="nombre-artista"></h1>
                     <p class="subtitulo">Elige una canción</p>
+                    <br>
+                    <p class="atras" onclick="location.href='index.html'">volver a artistas</p>
                 </div>
 
-                <!-- Columna de Canciones -->
                 <div class="col-5">
                    <div class="contenedorCanciones">
-                       <div class="row itemCancion">
-                            <h3>Cruel Summer</h3>
-                            <h5>02:58</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>Lover</h3>
-                            <h5>03:41</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>Anti-Hero</h3>
-                            <h5>03:20</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>cardigan</h3>
-                            <h5>03:59</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>Blank Space</h3>
-                            <h5>03:51</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>Style</h3>
-                            <h5>03:51</h5>
-                        </div>
-                         <div class="row itemCancion">
-                            <h3>All Too Well (10 Minute Version)</h3>
-                            <h5>10:13</h5>
-                        </div>
-                        <div class="row itemCancion">
-                            <h3>Delicate</h3>
-                            <h5>03:52</h5>
-                        </div>
                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="canciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+
+[  {
+    "id": "4",
+    "nombre": "Taylor Swift",
+    "imagen": "img/tay.jpeg",
+    "genero": "Pop",
+    "canciones": [
+      {
+        "idCancion": "68a6139c41ac8857c890ae28",
+        "titulo": "Love Story",
+        "duracion": "3:55",
+        "video": ""
+      },
+      {
+        "idCancion": "68a6152841ac8857c890ae2c",
+        "titulo": "Shake it off",
+        "duracion": "3:45",
+        "video": ""
+      },
+      {
+        "idCancion": "68a6179641ac8857c890ae2f",
+        "titulo": "Blank Space",
+        "duracion": "3:52",
+        "video": ""
+      },
+      {
+        "idCancion": "68a6192e41ac8857c890ae31",
+        "titulo": "Bad Blood",
+        "duracion": "3:37",
+        "video": ""
+      },
+      {
+        "idCancion": "68a6197c41ac8857c890ae32",
+        "titulo": "Cruel Summer",
+        "duracion": "3:00",
+        "video": ""
+      }
+      ,
+      {
+        "idCancion": "68a6197c41ac8857c890ae32",
+        "titulo": "You Belong With Me",
+        "duracion": "3:52",
+        "video": ""
+      }
+      ,
+      {
+        "idCancion": "68a6197c41ac8857c890ae32",
+        "titulo": "I Knew You Were Trouble",
+        "duracion": "3:41",
+        "video": ""
+      }
+      ,
+      {
+        "idCancion": "68a6197c41ac8857c890ae32",
+        "titulo": "Karma",
+        "duracion": "3:30",
+        "video": ""
+      }
+      ,
+      {
+        "idCancion": "68a6197c41ac8857c890ae32",
+        "titulo": "Style",
+        "duracion": "3:56",
+        "video": ""
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "nombre": "Pitbull",
+    "imagen": "img/pitbull.jpg",
+    "genero": "Pop",
+    "canciones": [
+      {
+        "idCancion": "68a61c5341ac8857c890ae34",
+        "titulo": "Give Me Everything",
+        "duracion": "4:15",
+        "video": ""
+      },
+      {
+        "idCancion": "68a61db141ac8857c890ae35",
+        "titulo": "Timber",
+        "duracion": "3:23",
+        "video": ""
+      },
+      {
+        "idCancion": "68a61ebf41ac8857c890ae36",
+        "titulo": "I know you want me (Calle Ocho)",
+        "duracion": "3:04",
+        "video": ""
+      },
+      {
+        "idCancion": "68af4d765d5beecd476c007f",
+        "titulo": "Hotel Room Service",
+        "duracion": "4:00",
+        "video": ""
+      },
+            {
+        "idCancion": "68af4d765d5beecd476c007f",
+        "titulo": "We are one (Ole Ola)",
+        "duracion": "3:43",
+        "video": ""
+      }
+    ]
+  }
+]
