@@ -116,4 +116,20 @@
   "album": "Pitbull starring in rebelution",
   "albumCover": "https://png.com/albumCover/rebelution.png",
   "pista": "https://mp3.com/pista/Youwantme.mp3"
+},{
+  "_id": "68af4d765d5beecd476c007f",
+  "titulo": "Hotel Room Service",
+  "artista": "Pitbull",
+  "genero": "pop",
+  "album": "Pitbull starring in rebelution",
+  "albumCover": "https://png.com/albumCover/rebelution.png",
+  "pista": "https://mp3.com/pista/HotelRoomService.mp3"
+},{
+  "_id": "68af4ea55d5beecd476c0082",
+  "titulo": "We Are One (Ole Ola)",
+  "artista": "Pitbull",
+  "genero": "Hip-Hop",
+  "album": "We Are One (Ole Ola)",
+  "albumCover": "https://jpg.com/albumCover/WeAreOne.jpg",
+  "pista": "https://mp3.com/pista/WeAreOne.mp3"
 }]
