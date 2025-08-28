@@ -1,6 +1,7 @@
 
-[  {
-    "id": "4",
+[  
+  { 
+    "id": "1",
     "nombre": "Taylor Swift",
     "imagen": "img/tay.jpeg",
     "genero": "Pop",
@@ -65,8 +66,9 @@
       }
     ]
   },
+
   {
-    "id": "5",
+    "id": "2",
     "nombre": "Pitbull",
     "imagen": "img/pitbull.jpg",
     "genero": "Pop",
@@ -95,12 +97,89 @@
         "duracion": "4:00",
         "video": ""
       },
-            {
+      {
         "idCancion": "68af4d765d5beecd476c007f",
         "titulo": "We are one (Ole Ola)",
         "duracion": "3:43",
         "video": ""
       }
     ]
-  }
+  },
+  
+  {
+    "_id": "68af5a425d5beecd476c008d",
+    "nombre": "Justin Bieber",
+    "foto": "https://jpg.com/fotoArtista/justin.jpg",
+    "genero": "Pop",
+    "canciones": [
+      {
+        "idCancion": "JB1",
+        "titulo": "Baby",
+        "duracion": "3:39",
+        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      },
+      {
+        "idCancion": "JB2",
+        "titulo": "Peaches",
+        "duracion": "3:22",
+        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      },
+      {
+        "idCancion": "JB3",
+        "titulo": "Sorry",
+        "duracion": "3:23",
+        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      },
+      {
+        "idCanicion": "JB4",
+        "titulo": "Love Yourself",
+        "duracion": "4:01",
+        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      }
+    ]
+  },
+{
+  "_id": "68af68195d5beecd476c0090",
+  "nombre": "Ariana Grande",
+  "foto": "https://jpg.com/fotoArtista/ariana.jpg",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "AG1",
+      "titulo": "The Boy Is Mine",
+      "duracion": "3:01",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/TheBoyIsMine.mp4"
+    },
+    {
+      "idCancion": "AG2",
+      "titulo": "7 Rings",
+      "duracion": "2:57",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/7rings.mp4"
+    },
+    {
+      "idCancion": "AG3",
+      "titulo": "thank u, next",
+      "duracion": "3:36",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/ThankUNext.mp4"
+    },
+    {
+      "titulo": "yes, and?",
+      "duracion": "3:41",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/YesAnd.mp4",
+      "idCancion": "AG4"
+    },
+    {
+      "titulo": "Break Free",
+      "duracion": "3:44",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/BreakFree.mp4",
+      "idCancion": "AG5"
+    },
+    {
+      "titulo": "Dangerous Woman",
+      "duracion": "4:02",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/DangerousWoman.mp4",
+      "idCancion": "AG6"
+    }
+  ]
+}
 ]

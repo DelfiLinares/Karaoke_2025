@@ -3,7 +3,8 @@
   "nombre": "Taylor Swift",
   "foto": "https://jpeg.com/fotoArtista/tay.jpeg",
   "genero": "Pop"
-},{
+}
+,{
   "_id": "68af5a425d5beecd476c008d",
   "nombre": "Justin Bieber",
   "foto": "https://jpg.com/fotoArtista/justin.jpg",

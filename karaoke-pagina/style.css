@@ -37,13 +37,21 @@ main {
   justify-self: center;
   padding:2.5%;
 }
-  
+
 .generosLista a{
   text-decoration: none;
   color: #9a76b8;
   font-weight: bold;
 }
- 
-.generosLista a:hover{
-  color: #ffffff;
+
+.generosLista .linkGeneros:active,
+.generosLista .linkGeneros:focus,
+.generosLista .linkGeneros.active {
+    color: #f0e6ff !important;
+    text-decoration: none;
 }
+
+.generosLista .linkGeneros:hover {
+    color: #c4aee6 !important;
+}
+  

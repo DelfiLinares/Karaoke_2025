@@ -37,6 +37,11 @@ main {
     text-shadow: 0 0 15px rgba(230, 204, 255, 0.7);
 }
 
+.generosLista li{
+    text-decoration: none;
+    color: white;
+}
+
 .atras {
     font-family: 'Montserrat', sans-serif; 
     font-size: 1rem;
@@ -52,12 +57,10 @@ main {
     margin-top: 1rem;
     font-weight: 300;
 }
-
 .atras:hover {
     color: #ffffff;
     cursor: pointer;
 }
-
 
 .contenedorCanciones {
     display: flex;
