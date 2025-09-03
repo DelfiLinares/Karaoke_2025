@@ -248,4 +248,71 @@
       "video": "/home/campanita/Escritorio/Karaoke/videos/happierThanEver.mp4"
     }
   ]
+},{
+  "_id": "68b8a9221abbcbe63d328ba1",
+  "nombre": "Nirvana",
+  "foto": "https://jpeg.com/fotoArtista/tay.jpeg",
+  "genero": "Rock",
+  "canciones": [
+    {
+      "idCancion": "NIR1",
+      "titulo": "Smells Like Teen Spirit",
+      "duracion": "5:01",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/smellsLikeTeenSpirit.mp4"
+    },
+    {
+      "idCancion": "NIR2",
+      "titulo": "Come As You Are",
+      "duracion": "3:39",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/comeAsYouAre.mp4"
+    },
+    {
+      "idCancion": "NIR3",
+      "titulo": "Lithium",
+      "duracion": "4:17",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/lithium.mp4"
+    },
+    {
+      "idCancion": "NIR4",
+      "titulo": "Heart-Shaped Box",
+      "duracion": "4:41",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/heartShapedBox.mp4"
+    },
+    {
+      "idCancion": "NIR5",
+      "titulo": "In Bloom",
+      "duracion": "4:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/inBloom.mp4"
+    },
+    {
+      "idCancion": "NIR6",
+      "titulo": "About a Girl",
+      "duracion": "2:48",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/aboutAGirl.mp4"
+    },
+    {
+      "idCancion": "NIR7",
+      "titulo": "Drain You",
+      "duracion": "3:44",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/drainYou.mp4"
+    },
+    {
+      "idCancion": "NIR8",
+      "titulo": "All Apologies",
+      "duracion": "3:50",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/allApologies.mp4"
+    },
+    {
+      "idCancion": "NIR9",
+      "titulo": "Rape Me",
+      "duracion": "2:50",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/rapeMe.mp4"
+    },
+    {
+      "idCancion": "NIR10",
+      "titulo": "Pennyroyal Tea",
+      "duracion": "3:39",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/pennyroyalTea.mp4"
+    }
+  ]
 }]
