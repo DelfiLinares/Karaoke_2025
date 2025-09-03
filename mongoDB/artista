@@ -181,4 +181,71 @@
       "video": "/home/campanita/Escritorio/Karaoke/videos/speedrive.mp4"
     }
   ]
+},{
+  "_id": "68b8a7651abbcbe63d328ba0",
+  "nombre": "Billie Eilish",
+  "foto": "https://jpg.com/fotoArtista/billieeilish.avif",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "BE1",
+      "titulo": "Bad Guy",
+      "duracion": "3:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/badGuy.mp4"
+    },
+    {
+      "idCancion": "BE2",
+      "titulo": "When The Party's Over",
+      "duracion": "3:16",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/whenThePartysOver.mp4"
+    },
+    {
+      "idCancion": "BE3",
+      "titulo": "Ocean Eyes",
+      "duracion": "3:20",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/oceanEyes.mp4"
+    },
+    {
+      "idCancion": "BE4",
+      "titulo": "Therefore I Am",
+      "duracion": "2:54",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/thereforeIAm.mp4"
+    },
+    {
+      "idCancion": "BE5",
+      "titulo": "Everything I Wanted",
+      "duracion": "4:05",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/everythingIWanted.mp4"
+    },
+    {
+      "idCancion": "BE6",
+      "titulo": "Lovely (con Khalid)",
+      "duracion": "3:21",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/lovely.mp4"
+    },
+    {
+      "idCancion": "BE7",
+      "titulo": "Bury a Friend",
+      "duracion": "3:13",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/buryAFriend.mp4"
+    },
+    {
+      "idCancion": "BE8",
+      "titulo": "My Future",
+      "duracion": "3:28",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/myFuture.mp4"
+    },
+    {
+      "idCancion": "BE9",
+      "titulo": "Your Power",
+      "duracion": "4:05",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/yourPower.mp4"
+    },
+    {
+      "idCancion": "BE10",
+      "titulo": "Happier Than Ever",
+      "duracion": "4:58",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/happierThanEver.mp4"
+    }
+  ]
 }]
