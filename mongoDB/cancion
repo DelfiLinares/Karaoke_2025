@@ -132,4 +132,36 @@
   "album": "We Are One (Ole Ola)",
   "albumCover": "https://jpg.com/albumCover/WeAreOne.jpg",
   "pista": "https://mp3.com/pista/WeAreOne.mp3"
+},{
+  "_id": "68b88c831abbcbe63d328b8f",
+  "titulo": "Yummy",
+  "artista": "Justin Bieber",
+  "genero": "Pop",
+  "album": "Changes",
+  "albumCover": "https://png.com/albumCover/changes.png",
+  "pista": "https://mp3.com/pista/yummy.mp3"
+},{
+  "_id": "68b890671abbcbe63d328b95",
+  "titulo": "Summertime Sadness",
+  "artista": "Lana del Rey",
+  "genero": "Pop",
+  "album": "Born to Die",
+  "albumCover": "https://png.com/albumCover/borntodie.png",
+  "pista": "https://mp3.com/pista/summertimesadness.mp3"
+},{
+  "_id": "68b8919e1abbcbe63d328b96",
+  "titulo": "Ultraviolence",
+  "artista": "Lana del Rey",
+  "genero": "Pop",
+  "album": "Ultraviolence",
+  "albumCover": "https://png.com/albumCover/ultraviolence.png",
+  "pista": "https://mp3.com/pista/ultraviolence.mp3"
+},{
+  "_id": "68b893831abbcbe63d328b98",
+  "titulo": "Ride",
+  "artista": "Lana del Rey",
+  "genero": "Indie pop",
+  "album": "Born to die",
+  "albumCover": "https://png.com/albumCover/borntodie.png",
+  "pista": "https://mp3.com/pista/ride.mp3"
 }]
