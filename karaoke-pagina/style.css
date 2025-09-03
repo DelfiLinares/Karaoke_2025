@@ -16,7 +16,7 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(0%, -50%); 
-    user-select: none; 
+  user-select: none; 
   align-items: center;
 }
   
@@ -37,21 +37,13 @@ main {
   justify-self: center;
   padding:2.5%;
 }
-
+  
 .generosLista a{
   text-decoration: none;
   color: #9a76b8;
   font-weight: bold;
 }
-
-.generosLista .linkGeneros:active,
-.generosLista .linkGeneros:focus,
-.generosLista .linkGeneros.active {
-    color: #f0e6ff !important;
-    text-decoration: none;
+ 
+.generosLista a:hover{
+  color: #ffffff;
 }
-
-.generosLista .linkGeneros:hover {
-    color: #c4aee6 !important;
-}
-  

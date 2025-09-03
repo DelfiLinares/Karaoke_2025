@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaoke</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <ul class="nav nav-underline generosLista">
-            <li class="nav-item"><a class="nav-link linkGeneros" href="#contenedor-pop">POP</a></li>
-            <li class="nav-item"><a class="nav-link linkGeneros" href="#contenedor-rock">ROCK</a></li>
-            <li class="nav-item"><a class="nav-link linkGeneros" href="#contenedor-latino">LATINO</a></li>
-            <li class="nav-item"><a class="nav-link linkGeneros" href="#contenedor-hiphop">HIP-HOP</a></li>
-            <li class="nav-item"><a class="nav-link linkGeneros" href="#contenedor-pop">NACIONAL</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-genero="Pop">POP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-genero="Rock">ROCK</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-genero="Latino">LATINO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-genero="Hip-Hop">HIP-HOP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-genero="Nacional">NACIONAL</a></li>
         </ul>
     </header>
     <main>
-        <div id="ccontenedor-pop" class="contenedor">
-            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <a href="artista.html">  <img class="image" src="img/tay.jpeg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="img/ariana.jpg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="img/charlee.jpg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="img/billie.webp" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="https://www.billboard.com/wp-content/uploads/2024/07/adele-las-vegas-residency-2022-billboard-espanol-1548.jpg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="https://media.gq.com.mx/photos/684b297b181489409b6acb14/2:3/w_1332,h_1998,c_limit/Ed_Sheeran_Rutina_para_evitar_envejecimiento-2217872638.jpg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="img/justin.jpg" draggable="false" /></a>
-            <a href="artista.html">  <img class="image" src="img/pitbull.jpg" draggable="false" /> </a>
-            <a href="artista.html">  <img class="image" src="https://cdn-p.smehost.net/sites/a8928da38df6414aae98564041b07ae0/wp-content/uploads/2020/10/Harry_Styles.jpg" draggable="false" /> </a>
-        </div>
-        </div>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" data-percentage="0"></div>
     </main>
-    <script src="app.js"></script>
+    <script src="scroll.js"></script>
+    <script src="conexionBDD.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

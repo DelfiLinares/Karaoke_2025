@@ -1,7 +1,119 @@
-
-[  
-  { 
+[{
     "id": "1",
+    "nombre": "Nirvana",
+    "imagen": "img/nirvana.avif",
+    "genero": "Rock",
+    "canciones": [
+      {
+        "idCancion": "685c524c9e41b25d35f2a2a5",
+        "titulo": "Aneurysm",
+        "duracion": "",
+        "video": ""
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "nombre": "Charli xcx",
+    "imagen": "img/charlee.jpg",
+    "genero": "Pop",
+     "canciones": [
+    {
+      "idCancion": "CX1",
+      "titulo": "Vroom Vroom",
+      "duracion": "3:13",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/vroomVroom.mp4"
+    },
+    {
+      "idCancion": "CX2",
+      "titulo": "Boom Clap",
+      "duracion": "2:49",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/boomClap.mp4"
+    },
+    {
+      "idCancion": "CX3",
+      "titulo": "Apple",
+      "duracion": "2:31",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/apple.mp4"
+    },
+    {
+      "idCancion": "CX4",
+      "titulo": "360",
+      "duracion": "02:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/360.mp4"
+    },
+    {
+      "idCancion": "CX5",
+      "titulo": "Good Ones",
+      "duracion": "02:16",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/goodOnes.mp4"
+    },
+    {
+      "idCancion": "CX6",
+      "titulo": "Von Dutch",
+      "duracion": "02:44",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/vonDutch.mp4"
+    },
+    {
+      "idCancion": "CX7",
+      "titulo": "I love it",
+      "duracion": "02:37",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/iLoveIt.mp4"
+    },
+    {
+      "idCancion": "CX8",
+      "titulo": "Baby",
+      "duracion": "02:39",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/babyCharli.mp4"
+    },
+    {
+      "idCancion": "CX9",
+      "titulo": "Girl, so confusing featuring lorde",
+      "duracion": "03:25",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/girlsoconfusing.mp4"
+    },
+    {
+      "idCancion": "CX10",
+      "titulo": "Speedrive",
+      "duracion": "01:57",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/speedrive.mp4"
+    }
+  ]
+  },
+  {
+    "id": "3",
+    "nombre": "Radiohead",
+    "imagen": "img/radiohead.jpeg",
+    "genero": "Rock",
+    "canciones": [
+      {
+        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "titulo": "Creep",
+        "duracion": "03:57",
+        "video": ""
+      },
+      {
+        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "titulo": "Just",
+        "duracion": "04:05",
+        "video": ""
+      },
+      {
+        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "titulo": "No Surprises",
+        "duracion": "03:48",
+        "video": ""
+      },
+      {
+        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "titulo": "Karma Police",
+        "duracion": "04:23",
+        "video": ""
+      }
+    ]
+  },
+  {
+    "id": "4",
     "nombre": "Taylor Swift",
     "imagen": "img/tay.jpeg",
     "genero": "Pop",
@@ -35,29 +147,25 @@
         "titulo": "Cruel Summer",
         "duracion": "3:00",
         "video": ""
-      }
-      ,
+      },
       {
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "You Belong With Me",
         "duracion": "3:52",
         "video": ""
-      }
-      ,
+      },
       {
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "I Knew You Were Trouble",
         "duracion": "3:41",
         "video": ""
-      }
-      ,
+      },
       {
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "Karma",
         "duracion": "3:30",
         "video": ""
-      }
-      ,
+      },
       {
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "Style",
@@ -66,9 +174,8 @@
       }
     ]
   },
-
   {
-    "id": "2",
+    "id": "5",
     "nombre": "Pitbull",
     "imagen": "img/pitbull.jpg",
     "genero": "Pop",
@@ -97,7 +204,7 @@
         "duracion": "4:00",
         "video": ""
       },
-      {
+            {
         "idCancion": "68af4d765d5beecd476c007f",
         "titulo": "We are one (Ole Ola)",
         "duracion": "3:43",
@@ -105,43 +212,10 @@
       }
     ]
   },
-  
   {
-    "_id": "68af5a425d5beecd476c008d",
-    "nombre": "Justin Bieber",
-    "foto": "https://jpg.com/fotoArtista/justin.jpg",
-    "genero": "Pop",
-    "canciones": [
-      {
-        "idCancion": "JB1",
-        "titulo": "Baby",
-        "duracion": "3:39",
-        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
-      },
-      {
-        "idCancion": "JB2",
-        "titulo": "Peaches",
-        "duracion": "3:22",
-        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
-      },
-      {
-        "idCancion": "JB3",
-        "titulo": "Sorry",
-        "duracion": "3:23",
-        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
-      },
-      {
-        "idCanicion": "JB4",
-        "titulo": "Love Yourself",
-        "duracion": "4:01",
-        "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
-      }
-    ]
-  },
-{
-  "_id": "68af68195d5beecd476c0090",
+  "id": "6",
   "nombre": "Ariana Grande",
-  "foto": "https://jpg.com/fotoArtista/ariana.jpg",
+  "imagen": "img/ariana.jpg",
   "genero": "Pop",
   "canciones": [
     {
@@ -181,5 +255,213 @@
       "idCancion": "AG6"
     }
   ]
-}
-]
+},
+{
+  "id": "7",
+  "nombre": "Justin Bieber",
+  "imagen": "img/justin.jpg",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "JB1",
+      "titulo": "Baby",
+      "duracion": "3:39",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+    },
+    {
+      "idCancion": "JB2",
+      "titulo": "Peaches",
+      "duracion": "3:22",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+    },
+    {
+      "idCancion": "JB3",
+      "titulo": "Sorry",
+      "duracion": "3:23",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+    },
+    {
+      "idCancion": "JB4",
+      "titulo": "Love Yourself",
+      "duracion": "4:01",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+    }
+  ]
+},
+{
+  "id": "8",
+  "nombre": "Lana del rey",
+  "imagen": "img/lana.jpeg",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "LR1",
+      "titulo": "Summertime Sadness",
+      "duracion": "4:25",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/summertimesadness.mp4"
+    },
+    {
+      "idCancion": "LR2",
+      "titulo": "Ultraviolence",
+      "duracion": "4:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/ultraviolence.mp4"
+    },
+    {
+      "idCancion": "LR3",
+      "titulo": "Ride",
+      "duracion": "04:50",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/ride.mp4"
+    },
+    {
+      "idCancion": "LR4",
+      "titulo": "Doin' Time",
+      "duracion": "03:21",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/dointime.mp4"
+    },
+    {
+      "idCancion": "LR5",
+      "titulo": "West Coast",
+      "duracion": "04:17",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+    },
+   {
+      "idCancion": "LR5",
+      "titulo": "National Anthem",
+      "duracion": "03:51",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+    },
+   {
+      "idCancion": "LR5",
+      "titulo": "Diet Mountain Dew",
+      "duracion": "04:17",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+    },
+   {
+      "idCancion": "LR5",
+      "titulo": "Video Games",
+      "duracion": "4:17",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+    }]
+},
+{
+  "id": "9",
+  "nombre": "Billie Eilish",
+  "imagen": "img/billie.jpg",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "BE1",
+      "titulo": "Bad Guy",
+      "duracion": "03:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/badGuy.mp4"
+    },
+    {
+      "idCancion": "BE2",
+      "titulo": "When The Party's Over",
+      "duracion": "03:16",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/whenThePartysOver.mp4"
+    },
+    {
+      "idCancion": "BE3",
+      "titulo": "Ocean Eyes",
+      "duracion": "03:20",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/oceanEyes.mp4"
+    },
+    {
+      "idCancion": "BE4",
+      "titulo": "Therefore I Am",
+      "duracion": "02:54",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/thereforeIAm.mp4"
+    },
+    {
+      "idCancion": "BE5",
+      "titulo": "Everything I Wanted",
+      "duracion": "04:05",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/everythingIWanted.mp4"
+    },
+    {
+      "idCancion": "BE6",
+      "titulo": "Lovely (con Khalid)",
+      "duracion": "03:21",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/lovely.mp4"
+    },
+    {
+      "idCancion": "BE7",
+      "titulo": "Bury a Friend",
+      "duracion": "03:13",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/buryAFriend.mp4"
+    },
+    {
+      "idCancion": "BE8",
+      "titulo": "My Future",
+      "duracion": "03:28",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/myFuture.mp4"
+    },
+    {
+      "idCancion": "BE9",
+      "titulo": "Your Power",
+      "duracion": "04:05",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/yourPower.mp4"
+    },
+    {
+      "idCancion": "BE10",
+      "titulo": "Happier Than Ever",
+      "duracion": "04:58",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/happierThanEver.mp4"
+    }
+  ]
+},
+{
+  "id": "10",
+  "nombre": "Ed Sheeran",
+  "imagen": "img/ed.webp",
+  "genero": "Pop",
+  "canciones": [
+    { "idCancion": "ES1", "titulo": "Shape of You", "duracion": "03:53", "video": "" },
+    { "idCancion": "ES2", "titulo": "Perfect", "duracion": "04:23", "video": "" },
+    { "idCancion": "ES3", "titulo": "Thinking Out Loud", "duracion": "04:41", "video": "" },
+    { "idCancion": "ES4", "titulo": "Photograph", "duracion": "04:19", "video": "" },
+    { "idCancion": "ES5", "titulo": "Castle on the Hill", "duracion": "04:21", "video": "" },
+    { "idCancion": "ES6", "titulo": "Galway Girl", "duracion": "02:50", "video": "" },
+    { "idCancion": "ES7", "titulo": "Happier", "duracion": "03:27", "video": "" },
+    { "idCancion": "ES8", "titulo": "I See Fire", "duracion": "05:00", "video": "" },
+    { "idCancion": "ES9", "titulo": "Shivers", "duracion": "03:27", "video": "" },
+    { "idCancion": "ES10", "titulo": "Bad Habits", "duracion": "03:51", "video": "" }
+  ]
+},
+{
+  "id": "11",
+  "nombre": "Adele",
+  "imagen": "img/adele.webp",
+  "genero": "Pop",
+  "canciones": [
+    { "idCancion": "AD1", "titulo": "Hello", "duracion": "04:55", "video": "" },
+    { "idCancion": "AD2", "titulo": "Someone Like You", "duracion": "04:45", "video": "" },
+    { "idCancion": "AD3", "titulo": "Rolling in the Deep", "duracion": "03:48", "video": "" },
+    { "idCancion": "AD4", "titulo": "Set Fire to the Rain", "duracion": "04:02", "video": "" },
+    { "idCancion": "AD5", "titulo": "Send My Love (To Your New Lover)", "duracion": "03:43", "video": "" },
+    { "idCancion": "AD6", "titulo": "Easy On Me", "duracion": "03:45", "video": "" },
+    { "idCancion": "AD7", "titulo": "Skyfall", "duracion": "04:46", "video": "" },
+    { "idCancion": "AD8", "titulo": "When We Were Young", "duracion": "04:51", "video": "" },
+    { "idCancion": "AD9", "titulo": "Water Under the Bridge", "duracion": "04:00", "video": "" },
+    { "idCancion": "AD10", "titulo": "Turning Tables", "duracion": "04:10", "video": "" }
+  ]
+},
+{
+  "id": "12",
+  "nombre": "Harry Styles",
+  "imagen": "img/harry.jpg",
+  "genero": "Pop",
+  "canciones": [
+    { "idCancion": "HS1", "titulo": "As It Was", "duracion": "02:47", "video": "" },
+    { "idCancion": "HS2", "titulo": "Watermelon Sugar", "duracion": "02:54", "video": "" },
+    { "idCancion": "HS3", "titulo": "Sign of the Times", "duracion": "05:40", "video": "" },
+    { "idCancion": "HS4", "titulo": "Adore You", "duracion": "03:27", "video": "" },
+    { "idCancion": "HS5", "titulo": "Falling", "duracion": "04:00", "video": "" },
+    { "idCancion": "HS6", "titulo": "Golden", "duracion": "03:28", "video": "" },
+    { "idCancion": "HS7", "titulo": "Late Night Talking", "duracion": "02:57", "video": "" },
+    { "idCancion": "HS8", "titulo": "Lights Up", "duracion": "02:52", "video": "" },
+    { "idCancion": "HS9", "titulo": "Kiwi", "duracion": "02:56", "video": "" },
+    { "idCancion": "HS10", "titulo": "Music For a Sushi Restaurant", "duracion": "03:14", "video": "" }
+  ]
+}]
