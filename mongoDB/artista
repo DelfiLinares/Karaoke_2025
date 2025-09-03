@@ -114,4 +114,71 @@
       "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
     }
   ]
+},{
+  "_id": "68b8a4771abbcbe63d328b9f",
+  "nombre": "Charli xcx",
+  "foto": "https://jpg.com/fotoArtista/charlixcx.avif",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "CX1",
+      "titulo": "Vroom Vroom",
+      "duracion": "3:13",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/vroomVroom.mp4"
+    },
+    {
+      "idCancion": "CX2",
+      "titulo": "Boom Clap",
+      "duracion": "2:49",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/boomClap.mp4"
+    },
+    {
+      "idCancion": "CX3",
+      "titulo": "Apple",
+      "duracion": "2:31",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/apple.mp4"
+    },
+    {
+      "idCancion": "CX4",
+      "titulo": "360",
+      "duracion": "",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/360.mp4"
+    },
+    {
+      "idCancion": "CX5",
+      "titulo": "Good Ones",
+      "duracion": "2:16",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/goodOnes.mp4"
+    },
+    {
+      "idCancion": "CX6",
+      "titulo": "Von Dutch",
+      "duracion": "2:44",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/vonDutch.mp4"
+    },
+    {
+      "idCancion": "CX7",
+      "titulo": "I love it",
+      "duracion": "2:37",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/iLoveIt.mp4"
+    },
+    {
+      "idCancion": "CX8",
+      "titulo": "Baby",
+      "duracion": "2:39",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/babyCharli.mp4"
+    },
+    {
+      "idCancion": "CX9",
+      "titulo": "Girl, so confusing featuring lorde",
+      "duracion": "3:25",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/girlsoconfusing.mp4"
+    },
+    {
+      "idCancion": "CX10",
+      "titulo": "Speedrive",
+      "duracion": "1:57",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/speedrive.mp4"
+    }
+  ]
 }]
