@@ -3,8 +3,7 @@
   "nombre": "Taylor Swift",
   "foto": "https://jpeg.com/fotoArtista/tay.jpeg",
   "genero": "Pop"
-}
-,{
+},{
   "_id": "68af5a425d5beecd476c008d",
   "nombre": "Justin Bieber",
   "foto": "https://jpg.com/fotoArtista/justin.jpg",
@@ -76,6 +75,43 @@
       "duracion": "4:02",
       "video": "/home/campanita/Escritorio/Karaoke/videos/DangerousWoman.mp4",
       "idCancion": "AG6"
+    }
+  ]
+},{
+  "_id": "68b89fb21abbcbe63d328b9e",
+  "nombre": "Lana del rey",
+  "foto": "https://jpg.com/fotoArtista/lana.avif",
+  "genero": "Pop",
+  "canciones": [
+    {
+      "idCancion": "LR1",
+      "titulo": "Summertime Sadness",
+      "duracion": "4:25",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/summertimesadness.mp4"
+    },
+    {
+      "idCancion": "LR2",
+      "titulo": "Ultraviolence",
+      "duracion": "4:14",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/ultraviolence.mp4"
+    },
+    {
+      "idCancion": "LR3",
+      "titulo": "Ride",
+      "duracion": "4:50",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/ride.mp4"
+    },
+    {
+      "idCancion": "LR4",
+      "titulo": "Doin' Time",
+      "duracion": "3:21",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/dointime.mp4"
+    },
+    {
+      "idCancion": "LR5",
+      "titulo": "West Coast",
+      "duracion": "4:17",
+      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
     }
   ]
 }]
