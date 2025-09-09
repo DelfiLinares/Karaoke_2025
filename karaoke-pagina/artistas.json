@@ -9,6 +9,66 @@
         "titulo": "Aneurysm",
         "duracion": "",
         "video": ""
+      },
+            {
+        "idCancion": "NIR1",
+        "titulo": "Aneurysm",
+        "duracion": "04:35",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR2",
+        "titulo": "Smells Like Teen Spirit",
+        "duracion": "05:01",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR3",
+        "titulo": "Come As You Are",
+        "duracion": "03:39",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR4",
+        "titulo": "Lithium",
+        "duracion": "04:17",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR5",
+        "titulo": "Heart-Shaped Box",
+        "duracion": "04:41",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR6",
+        "titulo": "In Bloom",
+        "duracion": "04:15",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR7",
+        "titulo": "About a Girl",
+        "duracion": "03:39",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR8",
+        "titulo": "All Apologies",
+        "duracion": "03:51",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR9",
+        "titulo": "Rape Me",
+        "duracion": "02:49",
+        "video": ""
+      },
+      {
+        "idCancion": "NIR10",
+        "titulo": "Polly",
+        "duracion": "02:57",
+        "video": ""
       }
     ]
   },
@@ -22,61 +82,61 @@
       "idCancion": "CX1",
       "titulo": "Vroom Vroom",
       "duracion": "3:13",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/vroomVroom.mp4"
+      "video": "/vroomVroom.mp4"
     },
     {
       "idCancion": "CX2",
       "titulo": "Boom Clap",
       "duracion": "2:49",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/boomClap.mp4"
+      "video": "/boomClap.mp4"
     },
     {
       "idCancion": "CX3",
       "titulo": "Apple",
       "duracion": "2:31",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/apple.mp4"
+      "video": "/apple.mp4"
     },
     {
       "idCancion": "CX4",
       "titulo": "360",
       "duracion": "02:14",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/360.mp4"
+      "video": "/360.mp4"
     },
     {
       "idCancion": "CX5",
       "titulo": "Good Ones",
       "duracion": "02:16",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/goodOnes.mp4"
+      "video": " //goodOnes.mp4"
     },
     {
       "idCancion": "CX6",
       "titulo": "Von Dutch",
       "duracion": "02:44",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/vonDutch.mp4"
+      "video": "/vonDutch.mp4"
     },
     {
       "idCancion": "CX7",
       "titulo": "I love it",
       "duracion": "02:37",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/iLoveIt.mp4"
+      "video": "/iLoveIt.mp4"
     },
     {
       "idCancion": "CX8",
       "titulo": "Baby",
       "duracion": "02:39",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/babyCharli.mp4"
+      "video": "/babyCharli.mp4"
     },
     {
       "idCancion": "CX9",
       "titulo": "Girl, so confusing featuring lorde",
       "duracion": "03:25",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/girlsoconfusing.mp4"
+      "video": "/girlsoconfusing.mp4"
     },
     {
       "idCancion": "CX10",
       "titulo": "Speedrive",
       "duracion": "01:57",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/speedrive.mp4"
+      "video": "/speedrive.mp4"
     }
   ]
   },
@@ -86,28 +146,58 @@
     "imagen": "img/radiohead.jpeg",
     "genero": "Rock",
     "canciones": [
-      {
-        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+            {
+        "idCancion": "RH1",
         "titulo": "Creep",
         "duracion": "03:57",
         "video": ""
       },
       {
-        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "idCancion": "RH2",
         "titulo": "Just",
         "duracion": "04:05",
         "video": ""
       },
       {
-        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "idCancion": "RH3",
         "titulo": "No Surprises",
         "duracion": "03:48",
         "video": ""
       },
       {
-        "idCancion": "685c5b5d9e41b25d35f2a2bf",
+        "idCancion": "RH4",
         "titulo": "Karma Police",
         "duracion": "04:23",
+        "video": ""
+      },
+      {
+        "idCancion": "RH5",
+        "titulo": "High and Dry",
+        "duracion": "04:17",
+        "video": ""
+      },
+      {
+        "idCancion": "RH6",
+        "titulo": "Fake Plastic Trees",
+        "duracion": "04:50",
+        "video": ""
+      },
+      {
+        "idCancion": "RH7",
+        "titulo": "Paranoid Android",
+        "duracion": "06:23",
+        "video": ""
+      },
+      {
+        "idCancion": "RH8",
+        "titulo": "Street Spirit (Fade Out)",
+        "duracion": "04:13",
+        "video": ""
+      },
+      {
+        "idCancion": "RH9",
+        "titulo": "Exit Music (For a Film)",
+        "duracion": "04:24",
         "video": ""
       }
     ]
@@ -222,36 +312,36 @@
       "idCancion": "AG1",
       "titulo": "The Boy Is Mine",
       "duracion": "3:01",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/TheBoyIsMine.mp4"
+      "video": " //TheBoyIsMine.mp4"
     },
     {
       "idCancion": "AG2",
       "titulo": "7 Rings",
       "duracion": "2:57",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/7rings.mp4"
+      "video": " //7rings.mp4"
     },
     {
       "idCancion": "AG3",
       "titulo": "thank u, next",
       "duracion": "3:36",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/ThankUNext.mp4"
+      "video": " //ThankUNext.mp4"
     },
     {
       "titulo": "yes, and?",
       "duracion": "3:41",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/YesAnd.mp4",
+      "video": " //YesAnd.mp4",
       "idCancion": "AG4"
     },
     {
       "titulo": "Break Free",
       "duracion": "3:44",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/BreakFree.mp4",
+      "video": " //BreakFree.mp4",
       "idCancion": "AG5"
     },
     {
       "titulo": "Dangerous Woman",
       "duracion": "4:02",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/DangerousWoman.mp4",
+      "video": " //DangerousWoman.mp4",
       "idCancion": "AG6"
     }
   ]
@@ -266,25 +356,25 @@
       "idCancion": "JB1",
       "titulo": "Baby",
       "duracion": "3:39",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      "video": " //Baby.mp4"
     },
     {
       "idCancion": "JB2",
       "titulo": "Peaches",
       "duracion": "3:22",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      "video": " //Baby.mp4"
     },
     {
       "idCancion": "JB3",
       "titulo": "Sorry",
       "duracion": "3:23",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      "video": " //Baby.mp4"
     },
     {
       "idCancion": "JB4",
       "titulo": "Love Yourself",
       "duracion": "4:01",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/Baby.mp4"
+      "video": " //Baby.mp4"
     }
   ]
 },
@@ -298,49 +388,49 @@
       "idCancion": "LR1",
       "titulo": "Summertime Sadness",
       "duracion": "4:25",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/summertimesadness.mp4"
+      "video": " //summertimesadness.mp4"
     },
     {
       "idCancion": "LR2",
       "titulo": "Ultraviolence",
       "duracion": "4:14",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/ultraviolence.mp4"
+      "video": " //ultraviolence.mp4"
     },
     {
       "idCancion": "LR3",
       "titulo": "Ride",
       "duracion": "04:50",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/ride.mp4"
+      "video": " //ride.mp4"
     },
     {
       "idCancion": "LR4",
       "titulo": "Doin' Time",
       "duracion": "03:21",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/dointime.mp4"
+      "video": " //dointime.mp4"
     },
     {
       "idCancion": "LR5",
       "titulo": "West Coast",
       "duracion": "04:17",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+      "video": " //westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "National Anthem",
       "duracion": "03:51",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+      "video": " //westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Diet Mountain Dew",
       "duracion": "04:17",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+      "video": " //westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Video Games",
       "duracion": "4:17",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/westcoast.mp4"
+      "video": " //westcoast.mp4"
     }]
 },
 {
@@ -353,61 +443,61 @@
       "idCancion": "BE1",
       "titulo": "Bad Guy",
       "duracion": "03:14",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/badGuy.mp4"
+      "video": " //badGuy.mp4"
     },
     {
       "idCancion": "BE2",
       "titulo": "When The Party's Over",
       "duracion": "03:16",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/whenThePartysOver.mp4"
+      "video": " //whenThePartysOver.mp4"
     },
     {
       "idCancion": "BE3",
       "titulo": "Ocean Eyes",
       "duracion": "03:20",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/oceanEyes.mp4"
+      "video": " //oceanEyes.mp4"
     },
     {
       "idCancion": "BE4",
       "titulo": "Therefore I Am",
       "duracion": "02:54",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/thereforeIAm.mp4"
+      "video": " //thereforeIAm.mp4"
     },
     {
       "idCancion": "BE5",
       "titulo": "Everything I Wanted",
       "duracion": "04:05",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/everythingIWanted.mp4"
+      "video": " //everythingIWanted.mp4"
     },
     {
       "idCancion": "BE6",
       "titulo": "Lovely (con Khalid)",
       "duracion": "03:21",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/lovely.mp4"
+      "video": " //lovely.mp4"
     },
     {
       "idCancion": "BE7",
       "titulo": "Bury a Friend",
       "duracion": "03:13",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/buryAFriend.mp4"
+      "video": " //buryAFriend.mp4"
     },
     {
       "idCancion": "BE8",
       "titulo": "My Future",
       "duracion": "03:28",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/myFuture.mp4"
+      "video": " //myFuture.mp4"
     },
     {
       "idCancion": "BE9",
       "titulo": "Your Power",
       "duracion": "04:05",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/yourPower.mp4"
+      "video": " //yourPower.mp4"
     },
     {
       "idCancion": "BE10",
       "titulo": "Happier Than Ever",
       "duracion": "04:58",
-      "video": "/home/campanita/Escritorio/Karaoke/videos/happierThanEver.mp4"
+      "video": " //happierThanEver.mp4"
     }
   ]
 },
@@ -464,4 +554,381 @@
     { "idCancion": "HS9", "titulo": "Kiwi", "duracion": "02:56", "video": "" },
     { "idCancion": "HS10", "titulo": "Music For a Sushi Restaurant", "duracion": "03:14", "video": "" }
   ]
-}]
+},
+  {
+    "id": "13",
+    "nombre": "Shakira",
+    "imagen": "img/shakira.webp",
+    "genero": "Latino",
+    "canciones": [
+      { "idCancion": "SHA1", "titulo": "Hips Don't Lie", "duracion": "03:38", "video": "" },
+      { "idCancion": "SHA2", "titulo": "Waka Waka", "duracion": "03:22", "video": "" },
+      { "idCancion": "SHA3", "titulo": "La Tortura", "duracion": "03:33", "video": "" },
+      { "idCancion": "SHA4", "titulo": "Chantaje", "duracion": "03:16", "video": "" },
+      { "idCancion": "SHA5", "titulo": "Loca", "duracion": "03:03", "video": "" },
+      { "idCancion": "SHA6", "titulo": "Antología", "duracion": "04:16", "video": "" },
+      { "idCancion": "SHA7", "titulo": "Ojos Así", "duracion": "03:54", "video": "" }
+    ]
+  },
+  {
+    "id": "14",
+    "nombre": "Daddy Yankee",
+    "imagen": "img/daddy.jpg",
+    "genero": "Latino",
+    "canciones": [
+      { "idCancion": "DY1", "titulo": "Gasolina", "duracion": "03:12", "video": "" },
+      { "idCancion": "DY2", "titulo": "Dura", "duracion": "03:20", "video": "" },
+      { "idCancion": "DY3", "titulo": "Limbo", "duracion": "03:41", "video": "" },
+      { "idCancion": "DY4", "titulo": "Con Calma", "duracion": "03:13", "video": "" },
+      { "idCancion": "DY5", "titulo": "Shaky Shaky", "duracion": "03:44", "video": "" },
+      { "idCancion": "DY6", "titulo": "Rompe", "duracion": "03:09", "video": "" },
+      { "idCancion": "DY7", "titulo": "Lo Que Pasó, Pasó", "duracion": "03:30", "video": "" }
+    ]
+  },
+  {
+    "id": "15",
+    "nombre": "J Balvin",
+    "imagen": "img/jbalvin.jpg",
+    "genero": "Latino",
+    "canciones": [
+      { "idCancion": "JB1", "titulo": "Mi Gente", "duracion": "03:09", "video": "" },
+      { "idCancion": "JB2", "titulo": "Ginza", "duracion": "03:12", "video": "" },
+      { "idCancion": "JB3", "titulo": "Safari", "duracion": "03:27", "video": "" },
+      { "idCancion": "JB4", "titulo": "Ay Vamos", "duracion": "03:39", "video": "" }
+    ]
+  },
+  {
+    "id": "16",
+    "nombre": "Maluma",
+    "imagen": "img/maluma.jpg",
+    "genero": "Latino",
+    "canciones": [
+      { "idCancion": "MAL1", "titulo": "Felices los 4", "duracion": "03:49", "video": "" },
+      { "idCancion": "MAL3", "titulo": "Borro Cassette", "duracion": "03:35", "video": "" },
+      { "idCancion": "MAL4", "titulo": "Chantaje (con Shakira)", "duracion": "03:16", "video": "" }
+    ]
+  },
+{
+  "id": "17",
+  "nombre": "Luis Miguel",
+  "imagen": "img/luismiguel.jpg",
+  "genero": "Latino",
+  "canciones": [
+    { "idCancion": "LM2", "titulo": "Ahora Te Puedes Marchar", "duracion": "02:54", "video": "" },
+    { "idCancion": "LM5", "titulo": "Cuando Calienta el Sol", "duracion": "03:22", "video": "" }
+  ]
+},
+{
+  "id": "18",
+  "nombre": "Bad Bunny",
+  "imagen": "img/badbunny.jpg",
+  "genero": "Latino",
+  "canciones": [
+    { "idCancion": "BB1", "titulo": "Tití Me Preguntó", "duracion": "04:03", "video": "" },
+    { "idCancion": "BB2", "titulo": "Callaita", "duracion": "04:10", "video": "" },
+    { "idCancion": "BB3", "titulo": "Mía", "duracion": "03:31", "video": "" },
+    { "idCancion": "BB5", "titulo": "DÁKITI", "duracion": "03:25", "video": "" },
+    { "idCancion": "BB6", "titulo": "Vete", "duracion": "03:13", "video": "" },
+    { "idCancion": "BB7", "titulo": "Soy Peor", "duracion": "03:33", "video": "" }
+  ]
+},
+{
+  "id": "19",
+  "nombre": "Chayanne",
+  "imagen": "img/chayanne.jpg",
+  "genero": "Latino",
+  "canciones": [
+    { "idCancion": "CH1", "titulo": "Torero", "duracion": "03:41", "video": "" },
+    { "idCancion": "CH2", "titulo": "Dejaría Todo", "duracion": "04:00", "video": "" },
+    { "idCancion": "CH3", "titulo": "Un Siglo Sin Ti", "duracion": "04:23", "video": "" },
+    { "idCancion": "CH4", "titulo": "Salomé", "duracion": "03:37", "video": "" }
+  ]
+},
+{
+  "id": "20",
+  "nombre": "Rosalía",
+  "imagen": "img/rosalia.jpg",
+  "genero": "Latino",
+  "canciones": [
+    { "idCancion": "RO1", "titulo": "DESPECHÁ", "duracion": "02:38", "video": "" },
+    { "idCancion": "RO2", "titulo": "Malamente", "duracion": "03:22", "video": "" },
+    { "idCancion": "RO3", "titulo": "Con Altura", "duracion": "02:41", "video": "" },
+    { "idCancion": "RO4", "titulo": "BIZCOCHITO", "duracion": "01:50", "video": "" },
+    { "idCancion": "RO6", "titulo": "Saoko", "duracion": "02:17", "video": "" }
+  ]
+},
+{
+  "id": "21",
+  "nombre": "Guns N' Roses",
+  "imagen": "img/guns.webp",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "GNR1", "titulo": "Sweet Child O' Mine", "duracion": "05:56", "video": "" },
+    { "idCancion": "GNR2", "titulo": "November Rain", "duracion": "08:57", "video": "" },
+    { "idCancion": "GNR3", "titulo": "Welcome to the Jungle", "duracion": "04:32", "video": "" },
+    { "idCancion": "GNR4", "titulo": "Paradise City", "duracion": "06:46", "video": "" },
+    { "idCancion": "GNR5", "titulo": "Don't Cry", "duracion": "04:44", "video": "" },
+    { "idCancion": "GNR6", "titulo": "Knockin' on Heaven's Door", "duracion": "05:36", "video": "" },
+    { "idCancion": "GNR7", "titulo": "Patience", "duracion": "05:56", "video": "" },
+    { "idCancion": "GNR9", "titulo": "You Could Be Mine", "duracion": "05:44", "video": "" }
+  ]
+},
+{
+  "id": "22",
+  "nombre": "Queen",
+  "imagen": "img/queen.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "Q1", "titulo": "Bohemian Rhapsody", "duracion": "05:55", "video": "" },
+    { "idCancion": "Q2", "titulo": "Don't Stop Me Now", "duracion": "03:29", "video": "" },
+    { "idCancion": "Q3", "titulo": "We Will Rock You", "duracion": "02:02", "video": "" },
+    { "idCancion": "Q4", "titulo": "We Are the Champions", "duracion": "03:00", "video": "" },
+    { "idCancion": "Q5", "titulo": "Another One Bites the Dust", "duracion": "03:35", "video": "" }
+  ]
+},
+{
+  "id": "23",
+  "nombre": "The Beatles",
+  "imagen": "img/beatles.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "B1", "titulo": "Hey Jude", "duracion": "07:11", "video": "" },
+    { "idCancion": "B2", "titulo": "Let It Be", "duracion": "04:03", "video": "" },
+    { "idCancion": "B3", "titulo": "Yesterday", "duracion": "02:05", "video": "" },
+    { "idCancion": "B4", "titulo": "Come Together", "duracion": "04:19", "video": "" },
+    { "idCancion": "B5", "titulo": "Help!", "duracion": "02:18", "video": "" }
+  ]
+},
+{
+  "id": "24",
+  "nombre": "The Rolling Stones",
+  "imagen": "img/rollingstones.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "RS1", "titulo": "(I Can't Get No) Satisfaction", "duracion": "03:44", "video": "" },
+    { "idCancion": "RS2", "titulo": "Paint It Black", "duracion": "03:45", "video": "" },
+    { "idCancion": "RS5", "titulo": "Sympathy for the Devil", "duracion": "06:18", "video": "" }
+  ]
+},
+{
+  "id": "25",
+  "nombre": "AC/DC",
+  "imagen": "img/acdc.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "ACDC1", "titulo": "Back In Black", "duracion": "04:15", "video": "" },
+    { "idCancion": "ACDC2", "titulo": "Highway to Hell", "duracion": "03:28", "video": "" },
+    { "idCancion": "ACDC3", "titulo": "Thunderstruck", "duracion": "04:52", "video": "" },
+    { "idCancion": "ACDC4", "titulo": "You Shook Me All Night Long", "duracion": "03:30", "video": "" },
+    { "idCancion": "ACDC5", "titulo": "T.N.T.", "duracion": "03:34", "video": "" }
+  ]
+},
+{
+  "id": "26",
+  "nombre": "U2",
+  "imagen": "img/u2.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "U21", "titulo": "With or Without You", "duracion": "04:56", "video": "" },
+    { "idCancion": "U22", "titulo": "One", "duracion": "04:36", "video": "" },
+    { "idCancion": "U23", "titulo": "Beautiful Day", "duracion": "04:08", "video": "" },
+    { "idCancion": "U24", "titulo": "I Still Haven't Found What I'm Looking For", "duracion": "04:37", "video": "" },
+    { "idCancion": "U25", "titulo": "Sunday Bloody Sunday", "duracion": "04:40", "video": "" }
+  ]
+},
+{
+  "id": "27",
+  "nombre": "The Police",
+  "imagen": "img/thepolice.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "TP1", "titulo": "Every Breath You Take", "duracion": "04:13", "video": "" },
+    { "idCancion": "TP2", "titulo": "Roxanne", "duracion": "03:12", "video": "" },
+    { "idCancion": "TP3", "titulo": "Message in a Bottle", "duracion": "04:51", "video": "" },
+    { "idCancion": "TP4", "titulo": "Don't Stand So Close to Me", "duracion": "04:02", "video": "" },
+    { "idCancion": "TP5", "titulo": "Walking on the Moon", "duracion": "05:02", "video": "" }
+  ]
+},
+{
+  "id": "28",
+  "nombre": "Red Hot Chili Peppers",
+  "imagen": "img/rhcp.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "RHCP1", "titulo": "Californication", "duracion": "05:21", "video": "" },
+    { "idCancion": "RHCP2", "titulo": "Under the Bridge", "duracion": "04:24", "video": "" },
+    { "idCancion": "RHCP3", "titulo": "Scar Tissue", "duracion": "03:37", "video": "" },
+    { "idCancion": "RHCP4", "titulo": "Otherside", "duracion": "04:15", "video": "" },
+    { "idCancion": "RHCP5", "titulo": "By the Way", "duracion": "03:37", "video": "" }
+  ]
+},
+{
+  "id": "29",
+  "nombre": "Bon Jovi",
+  "imagen": "img/bonjovi.jpg",
+  "genero": "Rock",
+  "canciones": [
+    { "idCancion": "BJ1", "titulo": "Livin' on a Prayer", "duracion": "04:09", "video": "" },
+    { "idCancion": "BJ2", "titulo": "It's My Life", "duracion": "03:44", "video": "" },
+    { "idCancion": "BJ3", "titulo": "Always", "duracion": "05:53", "video": "" },
+    { "idCancion": "BJ4", "titulo": "You Give Love a Bad Name", "duracion": "03:43", "video": "" },
+    { "idCancion": "BJ5", "titulo": "Wanted Dead or Alive", "duracion": "05:09", "video": "" }
+  ]
+},
+{
+  "id": "30",
+  "nombre": "Travis Scott",
+  "imagen": "img/travisscott.jpg",
+  "genero": "Hip-Hop",
+  "canciones": [
+    { "idCancion": "TS1", "titulo": "SICKO MODE", "duracion": "05:12", "video": "" },
+    { "idCancion": "TS2", "titulo": "goosebumps", "duracion": "04:03", "video": "" },
+    { "idCancion": "TS3", "titulo": "HIGHEST IN THE ROOM", "duracion": "02:55", "video": "" },
+    { "idCancion": "TS4", "titulo": "STARGAZING", "duracion": "05:23", "video": "" },
+    { "idCancion": "TS5", "titulo": "Antidote", "duracion": "04:22", "video": "" }
+  ]
+},
+{
+  "id": "31",
+  "nombre": "Tyler, The Creator",
+  "imagen": "img/tyler.jpg",
+  "genero": "Hip-Hop",
+  "canciones": [
+    { "idCancion": "TY1", "titulo": "EARFQUAKE", "duracion": "03:10", "video": "" },
+    { "idCancion": "TY2", "titulo": "See You Again", "duracion": "03:00", "video": "" },
+    { "idCancion": "TY3", "titulo": "NEW MAGIC WAND", "duracion": "03:15", "video": "" },
+    { "idCancion": "TY4", "titulo": "Yonkers", "duracion": "04:09", "video": "" },
+    { "idCancion": "TY5", "titulo": "IFHY", "duracion": "05:19", "video": "" }
+  ]
+},
+{
+  "id": "32",
+  "nombre": "Drake",
+  "imagen": "img/drake.jpg",
+  "genero": "Hip-Hop",
+  "canciones": [
+    { "idCancion": "DR1", "titulo": "God's Plan", "duracion": "03:19", "video": "" },
+    { "idCancion": "DR2", "titulo": "Hotline Bling", "duracion": "04:27", "video": "" },
+    { "idCancion": "DR3", "titulo": "One Dance", "duracion": "02:54", "video": "" },
+    { "idCancion": "DR4", "titulo": "In My Feelings", "duracion": "03:37", "video": "" },
+    { "idCancion": "DR5", "titulo": "Started From the Bottom", "duracion": "02:53", "video": "" }
+  ]
+},
+{
+  "id": "33",
+  "nombre": "Kendrick Lamar",
+  "imagen": "img/kendrick.jpg",
+  "genero": "Hip-Hop",
+  "canciones": [
+    { "idCancion": "KL1", "titulo": "HUMBLE.", "duracion": "02:57", "video": "" },
+    { "idCancion": "KL2", "titulo": "DNA.", "duracion": "03:06", "video": "" },
+    { "idCancion": "KL3", "titulo": "Alright", "duracion": "03:39", "video": "" },
+    { "idCancion": "KL4", "titulo": "Swimming Pools (Drank)", "duracion": "04:07", "video": "" },
+    { "idCancion": "KL5", "titulo": "LOVE.", "duracion": "03:33", "video": "" }
+  ]
+},
+{
+  "id": "34",
+  "nombre": "Los Piojos",
+  "imagen": "img/lospiojos.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "LP1", "titulo": "Tan Solo", "duracion": "04:09", "video": "" },
+    { "idCancion": "LP2", "titulo": "Verano del '92", "duracion": "04:37", "video": "" },
+    { "idCancion": "LP3", "titulo": "El Farolito", "duracion": "04:36", "video": "" },
+    { "idCancion": "LP4", "titulo": "Bicho de Ciudad", "duracion": "04:36", "video": "" },
+    { "idCancion": "LP5", "titulo": "Maradó", "duracion": "04:05", "video": "" }
+  ]
+},
+{
+  "id": "35",
+  "nombre": "Ciro y los Persas",
+  "imagen": "img/ciro.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "CP1", "titulo": "Antes y Después", "duracion": "04:11", "video": "" },
+    { "idCancion": "CP2", "titulo": "Servidor", "duracion": "04:09", "video": "" },
+    { "idCancion": "CP3", "titulo": "Juira!", "duracion": "03:44", "video": "" },
+    { "idCancion": "CP4", "titulo": "Insisto", "duracion": "04:09", "video": "" },
+    { "idCancion": "CP5", "titulo": "Barón Rojo", "duracion": "04:09", "video": "" }
+  ]
+},
+{
+  "id": "36",
+  "nombre": "Lali",
+  "imagen": "img/lali.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "LA1", "titulo": "Disciplina", "duracion": "02:52", "video": "" },
+    { "idCancion": "LA2", "titulo": "N5", "duracion": "03:09", "video": "" },
+    { "idCancion": "LA3", "titulo": "Como Tú", "duracion": "03:05", "video": "" },
+    { "idCancion": "LA4", "titulo": "Sin Querer Queriendo", "duracion": "03:19", "video": "" },
+    { "idCancion": "LA5", "titulo": "Boomerang", "duracion": "03:13", "video": "" }
+  ]
+},
+{
+  "id": "37",
+  "nombre": "Soda Stereo",
+  "imagen": "img/sodastereo.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "SS1", "titulo": "De Música Ligera", "duracion": "03:32", "video": "" },
+    { "idCancion": "SS2", "titulo": "Nada Personal", "duracion": "04:03", "video": "" },
+    { "idCancion": "SS3", "titulo": "Persiana Americana", "duracion": "04:54", "video": "" },
+    { "idCancion": "SS4", "titulo": "En la Ciudad de la Furia", "duracion": "05:48", "video": "" },
+    { "idCancion": "SS5", "titulo": "Cuando Pase el Temblor", "duracion": "04:47", "video": "" }
+  ]
+},
+{
+  "id": "38",
+  "nombre": "Gustavo Cerati",
+  "imagen": "img/cerati.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "GC1", "titulo": "Crimen", "duracion": "04:04", "video": "" },
+    { "idCancion": "GC2", "titulo": "Adiós", "duracion": "04:13", "video": "" },
+    { "idCancion": "GC3", "titulo": "Puente", "duracion": "04:34", "video": "" },
+    { "idCancion": "GC4", "titulo": "Cosas Imposibles", "duracion": "03:30", "video": "" },
+    { "idCancion": "GC5", "titulo": "Deja Vu", "duracion": "03:41", "video": "" }
+  ]
+},
+{
+  "id": "39",
+  "nombre": "Los redondos",
+  "imagen": "img/redondos.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "PR1", "titulo": "Jijiji", "duracion": "04:36", "video": "" },
+    { "idCancion": "PR2", "titulo": "Un Ángel para tu Soledad", "duracion": "05:23", "video": "" },
+    { "idCancion": "PR3", "titulo": "La Bestia Pop", "duracion": "04:06", "video": "" },
+    { "idCancion": "PR4", "titulo": "Todo un Palo", "duracion": "04:14", "video": "" },
+    { "idCancion": "PR5", "titulo": "El Pibe de los Astilleros", "duracion": "06:03", "video": "" }
+  ]
+},
+{
+  "id": "40",
+  "nombre": "Miranda!",
+  "imagen": "img/miranda.webp",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "MI1", "titulo": "Don", "duracion": "03:37", "video": "" },
+    { "idCancion": "MI2", "titulo": "Perfecta", "duracion": "03:36", "video": "" },
+    { "idCancion": "MI3", "titulo": "Yo Te Diré", "duracion": "03:37", "video": "" },
+    { "idCancion": "MI4", "titulo": "Prisionero", "duracion": "03:36", "video": "" },
+    { "idCancion": "MI5", "titulo": "Uno Los Dos", "duracion": "03:36", "video": "" }
+  ]
+},
+{
+  "id": "41",
+  "nombre": "Luck Ra",
+  "imagen": "img/luckra.jpg",
+  "genero": "Nacional",
+  "canciones": [
+    { "idCancion": "LR1", "titulo": "La Morocha", "duracion": "02:46", "video": "" },
+    { "idCancion": "LR2", "titulo": "Hola Perdida", "duracion": "02:46", "video": "" },
+    { "idCancion": "LR3", "titulo": "Que Me Falte Todo", "duracion": "02:46", "video": "" },
+    { "idCancion": "LR4", "titulo": "Ya No Vuelvas", "duracion": "02:46", "video": "" },
+    { "idCancion": "LR5", "titulo": "Ojalá", "duracion": "02:46", "video": "" }
+  ]
+}
+]
