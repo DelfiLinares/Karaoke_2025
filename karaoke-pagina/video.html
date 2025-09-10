@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproduciendo video</title>
+</head>
+<body>
+  <h1>Reproduciendo video seleccionado</h1>
+
+  <video id="reproductor" width="640" height="360" controls autoplay>
+    Tu navegador no soporta el elemento de video.
+  </video>
+
+  <script>
+    // Obtener el parámetro "video" de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombreVideo = urlParams.get('video');
+
+    if(nombreVideo) {
+      const videoElement = document.getElementById('reproductor');
+      videoElement.src = nombreVideo; // Asigna el video al reproductor
+      videoElement.play();
+    } else {
+      document.body.innerHTML += "<p>No se seleccionó ningún video.</p>";
+    }
+  </script>
+</body>
+</html>
+
