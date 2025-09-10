@@ -143,7 +143,7 @@
   {
     "id": "3",
     "nombre": "Radiohead",
-    "imagen": "img/radiohead.jpeg",
+    "imagen": "img/radiohead.webp",
     "genero": "Rock",
     "canciones": [
             {
@@ -702,7 +702,7 @@
 {
   "id": "24",
   "nombre": "The Rolling Stones",
-  "imagen": "img/rollingstones.jpg",
+  "imagen": "img/rollingstones.webp",
   "genero": "Rock",
   "canciones": [
     { "idCancion": "RS1", "titulo": "(I Can't Get No) Satisfaction", "duracion": "03:44", "video": "" },
@@ -726,7 +726,7 @@
 {
   "id": "26",
   "nombre": "U2",
-  "imagen": "img/u2.jpg",
+  "imagen": "img/U2.webp",
   "genero": "Rock",
   "canciones": [
     { "idCancion": "U21", "titulo": "With or Without You", "duracion": "04:56", "video": "" },
@@ -778,7 +778,7 @@
 {
   "id": "30",
   "nombre": "Travis Scott",
-  "imagen": "img/travisscott.jpg",
+  "imagen": "img/travis.webp",
   "genero": "Hip-Hop",
   "canciones": [
     { "idCancion": "TS1", "titulo": "SICKO MODE", "duracion": "05:12", "video": "" },
@@ -804,7 +804,7 @@
 {
   "id": "32",
   "nombre": "Drake",
-  "imagen": "img/drake.jpg",
+  "imagen": "img/drake.webp",
   "genero": "Hip-Hop",
   "canciones": [
     { "idCancion": "DR1", "titulo": "God's Plan", "duracion": "03:19", "video": "" },
@@ -817,7 +817,7 @@
 {
   "id": "33",
   "nombre": "Kendrick Lamar",
-  "imagen": "img/kendrick.jpg",
+  "imagen": "img/kendrick.avif",
   "genero": "Hip-Hop",
   "canciones": [
     { "idCancion": "KL1", "titulo": "HUMBLE.", "duracion": "02:57", "video": "" },
@@ -843,7 +843,7 @@
 {
   "id": "35",
   "nombre": "Ciro y los Persas",
-  "imagen": "img/ciro.jpg",
+  "imagen": "img/ciro.png",
   "genero": "Nacional",
   "canciones": [
     { "idCancion": "CP1", "titulo": "Antes y Después", "duracion": "04:11", "video": "" },
@@ -856,7 +856,7 @@
 {
   "id": "36",
   "nombre": "Lali",
-  "imagen": "img/lali.jpg",
+  "imagen": "img/lali.webp",
   "genero": "Nacional",
   "canciones": [
     { "idCancion": "LA1", "titulo": "Disciplina", "duracion": "02:52", "video": "" },
@@ -921,7 +921,7 @@
 {
   "id": "41",
   "nombre": "Luck Ra",
-  "imagen": "img/luckra.jpg",
+  "imagen": "img/luckra.jpeg",
   "genero": "Nacional",
   "canciones": [
     { "idCancion": "LR1", "titulo": "La Morocha", "duracion": "02:46", "video": "" },
