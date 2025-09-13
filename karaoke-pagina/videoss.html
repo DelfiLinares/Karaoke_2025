@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Seleccionar video</title>
+</head>
+<body>
+  <h1>Elige un video</h1>
+
+  <button onclick="abrirVideo('tito.mp4')">Video 1</button>
+  <button onclick="abrirVideo('video2.mp4')">Video 2</button>
+  <button onclick="abrirVideo('video3.mp4')">Video 3</button>
+
+  <script>
+    function abrirVideo(nombreVideo) {
+      window.open('video.html?video=' + encodeURIComponent(nombreVideo), '_blank');
+    }
+  </script>
+</body>
+</html>
