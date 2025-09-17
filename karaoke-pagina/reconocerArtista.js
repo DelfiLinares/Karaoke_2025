@@ -1,3 +1,7 @@
+function abrirVideo(nombreVideo) {
+  window.open('video.html?video=' + encodeURIComponent(nombreVideo), '_self');
+}
+
 function mostrarDetallesArtista(artista) {
     document.querySelector('.nombre-artista').textContent = artista.nombre;
     document.querySelector('.fotoArtista').src = artista.imagen;
@@ -8,8 +12,10 @@ function mostrarDetallesArtista(artista) {
         const row = document.createElement('div');
         row.className = "row itemCancion";
         row.innerHTML = `
+        <button style="background-color:#2a1a3a" onclick="abrirVideo('${cancion.video}')">
             <h3>${cancion.titulo}</h3>
             <h5>${cancion.duracion}</h5>
+        </button>
         `;
         contenedor.appendChild(row);
     });

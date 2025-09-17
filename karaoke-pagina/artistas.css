@@ -88,7 +88,7 @@ main {
     transform: scale(1.03);
 }
 
-.itemCancion h3 {
+.itemCancion button h3 {
     color: #e3e3e3;
     font-weight: 600;
     font-size: 1.1rem;
@@ -96,7 +96,7 @@ main {
     margin-bottom: 0;
 }
 
-.itemCancion h5 {
+.itemCancion button h5 {
     color: #9a8c98;
     font-weight: 400;
     font-size: 0.9rem;
