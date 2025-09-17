@@ -212,7 +212,7 @@
         "idCancion": "68a6139c41ac8857c890ae28",
         "titulo": "Love Story",
         "duracion": "3:55",
-        "video": ""
+        "video": "videosKaraoke/lovestory.mp4"
       },
       {
         "idCancion": "68a6152841ac8857c890ae2c",
@@ -224,7 +224,7 @@
         "idCancion": "68a6179641ac8857c890ae2f",
         "titulo": "Blank Space",
         "duracion": "3:52",
-        "video": ""
+        "video": "blankspace.mp4"
       },
       {
         "idCancion": "68a6192e41ac8857c890ae31",
@@ -242,7 +242,7 @@
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "You Belong With Me",
         "duracion": "3:52",
-        "video": ""
+        "video": "videosKaraoke/ybwm.mp4"
       },
       {
         "idCancion": "68a6197c41ac8857c890ae32",
@@ -260,7 +260,7 @@
         "idCancion": "68a6197c41ac8857c890ae32",
         "titulo": "Style",
         "duracion": "3:56",
-        "video": ""
+        "video": "videosKaraoke/style.mp4"
       }
     ]
   },

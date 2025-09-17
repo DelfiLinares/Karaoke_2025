@@ -68,7 +68,7 @@ main {
     padding: 3rem 2rem; 
 }
 
-.itemCancion {
+.itemCancion button{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ main {
     width: 100%; 
 }
 
-.itemCancion:hover {
+.itemCancion button:hover {
     background-color: #3c2a52;
     cursor: pointer;
     transform: scale(1.03);
