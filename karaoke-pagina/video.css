@@ -1,0 +1,57 @@
+    body {
+      background-color: #14071f; 
+      color: white;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+      align-items: center;
+      padding: 20px; /* Añade un poco de padding general */
+    }
+
+    .header-karaoke {
+      width: 100%;
+      height: 150px; /* Altura para el futuro video de la webcam */
+      background-color: #2a1a3a; /* Un color de fondo para el espacio */
+      margin-bottom: 20px; /* Espacio entre el header y el reproductor */
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #9a8c98;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #reproductor {
+      width: 90%; /* Ajusta el ancho del video */
+      max-width: 1200px; /* Establece un ancho máximo */
+      height: auto; /* Permite que la altura se ajuste automáticamente */
+      max-height: calc(100vh - 200px); /* Ocupa el espacio restante quitando el header y padding */
+      border: 2px solid #453553;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .back-button {
+      margin-top: 20px;
+      font-family: 'Montserrat', sans-serif; 
+      font-size: 1rem;
+      color: #c4aee6;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-button:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    /* Ocultar el h1 "Reproduciendo video seleccionado" ya que no encaja con la nueva estética */
+    h1 {
+      display: none;
+    }
