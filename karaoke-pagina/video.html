@@ -3,41 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reproduciendo video</title>
+  <title>Karaoke con Grabación</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="artistas.css">
-  <link rel="stylesheet" href="video.css"> 
+  <link rel="stylesheet" href="video.css">
 </head>
 <body>
   <main class="video-container">
-    <div class="header-karaoke">
-      <p>Espacio para webcam futura</p>
+    <video id="webcam-stream" autoplay playsinline muted></video>
+
+    <div class="controls">
+      <button id="recordButton" disabled>Iniciar Grabación</button>
+      <button id="stopButton" disabled>Detener Grabación</button>
     </div>
 
-    <video id="reproductor" controls autoplay>
-      Tu navegador no soporta el elemento de video.
-    </video>
-
+     <a id="downloadLink" href="#" download="mi-karaoke.webm">Descargar Grabación</a>  
+    <video id="reproductor" controls autoplay></video>
     <a href="javascript:history.back()" class="back-button">Volver al artista</a>
   </main>
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const nombreVideo = urlParams.get('video');
+    const videoElement = document.getElementById('reproductor');
+    const webcamElement = document.getElementById('webcam-stream');
+    const downloadLink = document.getElementById('downloadLink');
 
-    if(nombreVideo) {
-      const videoElement = document.getElementById('reproductor');
+    let mediaRecorder;
+    let pedazoGrabado = [];
+    let webcamStream; // Variable para almacenar el stream de la webcam
+
+    // Función para iniciar la webcam y obtener el stream
+    async function startWebcam() {
+      try {
+        webcamStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        webcamElement.srcObject = webcamStream;
+        console.log("Webcam y micrófono iniciados correctamente.");
+        recordButton.disabled = false;
+      } catch (err) {
+        console.error("Error al acceder a la webcam/micrófono: ", err);
+        webcamElement.style.display = 'none';
+        const container = document.querySelector('.video-container');
+        const errorMessage = document.createElement('p');
+        errorMessage.style.cssText = "font-size: 1.2rem; color: #ff6b6b; text-align: center; margin-top: 20px;";
+        errorMessage.textContent = "No se pudo acceder a la cámara/micrófono. Asegúrate de haber dado permiso.";
+        container.insertBefore(errorMessage, videoElement);
+      }
+    }
+
+    // inicia la grabación
+    recordButton.addEventListener('click', () => {
+      pedazoGrabado = []; 
+      try {
+        mediaRecorder = new MediaRecorder(webcamStream, { mimeType: 'video/webm' });
+
+        mediaRecorder.ondataavailable = (event) => {
+          if (event.data.size > 0) {
+            recorded.push(event.data);
+          }
+        };
+
+        mediaRecorder.onstop = () => {
+          const blob = new Blob(pedazoGrabado, { type: 'video/webm' });
+          const url = URL.createObjectURL(blob);
+          downloadLink.href = url;
+          downloadLink.style.display = 'block';
+          console.log("Grabación finalizada. URL para descarga:", url);
+        };
+
+        mediaRecorder.start();
+        console.log("Grabación iniciada...");
+        recordButton.disabled = true;
+        stopButton.disabled = false;
+        downloadLink.style.display = 'none';
+      } catch (err) {
+        console.error("Error al iniciar MediaRecorder:", err);
+        alert("No se pudo iniciar la grabación. ¿La webcam está activa?");
+      }
+    });
+
+    stopButton.addEventListener('click', () => {
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        mediaRecorder.stop();
+        console.log("Grabación detenida.");
+        recordButton.disabled = false;
+        stopButton.disabled = true;
+      }
+    });
+
+    if (nombreVideo) {
       videoElement.src = nombreVideo;
       videoElement.play();
+      startWebcam(); 
     } else {
       document.querySelector('.video-container').innerHTML = `
-        <div class="header-karaoke">
-          <p>Espacio para tu webcam futura</p>
-        </div>
-        <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video.</p>
+        <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video de karaoke.</p>
         <a href="index.html" class="back-button">Volver a artistas</a>
       `;
     }
