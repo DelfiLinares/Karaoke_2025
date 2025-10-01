@@ -1,110 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karaoke con Grabación</title>
+  <title>Karaoke Automático con Google Drive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="artistas.css">
   <link rel="stylesheet" href="video.css">
+
 </head>
+
 <body>
   <main class="video-container">
-    <video id="webcam-stream" autoplay playsinline muted></video>
-
-    <div class="controls">
-      <button id="recordButton" disabled>Iniciar Grabación</button>
-      <button id="stopButton" disabled>Detener Grabación</button>
+    <div id="countdown-overlay">
+      <span id="countdown-number"></span>
     </div>
 
-     <a id="downloadLink" href="#" download="mi-karaoke.webm">Descargar Grabación</a>  
-    <video id="reproductor" controls autoplay></video>
-    <a href="javascript:history.back()" class="back-button">Volver al artista</a>
+    <div id="qr-section">
+        <h2>¡Tu karaoke está listo!</h2>
+        <p id="qr-message">Escanea este código para ver/descargar tu video:</p>
+        <div id="qr-code"></div>
+        <p style="font-size: 0.9rem; color: #9a8c98; margin-top: 20px;">Puede tardar unos segundos en estar disponible en Google Drive.</p>
+        <a href="index.html" class="back-button" style="z-index: 1002;">Volver a artistas</a>
+    </div>
+
+    <video id="webcam-stream" autoplay playsinline muted></video>
+
+
+    <video id="reproductor" controls></video>
+
+    <a href="javascript:history.back()" class="back-button" style="z-index: 999;">Volver al artista</a>
   </main>
+
+  <!-- SCRIPTS DE LIBRERÍAS DE GOOGLE -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://apis.google.com/js/client.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="autenticacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const nombreVideo = urlParams.get('video');
     const videoElement = document.getElementById('reproductor');
     const webcamElement = document.getElementById('webcam-stream');
-    const downloadLink = document.getElementById('downloadLink');
+    const countdownOverlay = document.getElementById('countdown-overlay');
+    const countdownNumber = document.getElementById('countdown-number');
+    const qrSection = document.getElementById('qr-section');
+    const qrCodeDiv = document.getElementById('qr-code');
 
     let mediaRecorder;
-    let pedazoGrabado = [];
-    let webcamStream; // Variable para almacenar el stream de la webcam
+    let recordedChunks = [];
+    let webcamStream;
+    let videoDuration = 0; 
+    window.isGoogleApiLoaded = false; // Variable global para el estado de la API de Google
 
-    // Función para iniciar la webcam y obtener el stream
-    async function startWebcam() {
-      try {
-        webcamStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-        webcamElement.srcObject = webcamStream;
-        console.log("Webcam y micrófono iniciados correctamente.");
-        recordButton.disabled = false;
-      } catch (err) {
-        console.error("Error al acceder a la webcam/micrófono: ", err);
-        webcamElement.style.display = 'none';
-        const container = document.querySelector('.video-container');
-        const errorMessage = document.createElement('p');
-        errorMessage.style.cssText = "font-size: 1.2rem; color: #ff6b6b; text-align: center; margin-top: 20px;";
-        errorMessage.textContent = "No se pudo acceder a la cámara/micrófono. Asegúrate de haber dado permiso.";
-        container.insertBefore(errorMessage, videoElement);
-      }
+    // --- Funciones de Conteo Regresivo y Webcam ---
+    function iniciarCountdown(duration) {
+        countdownOverlay.classList.add('show');
+        let count = duration;
+        countdownNumber.textContent = count;
+
+        const interval = setInterval(() => {
+            count--;
+            countdownNumber.textContent = count;
+            if (count <= 0) {
+                clearInterval(interval);
+                countdownOverlay.classList.remove('show');
+                countdownOverlay.classList.add('hide');
+                setTimeout(iniciarKaraokeSession, 500); 
+            }
+        }, 1000);
     }
 
-    // inicia la grabación
-    recordButton.addEventListener('click', () => {
-      pedazoGrabado = []; 
-      try {
-        mediaRecorder = new MediaRecorder(webcamStream, { mimeType: 'video/webm' });
-
-        mediaRecorder.ondataavailable = (event) => {
-          if (event.data.size > 0) {
-            recorded.push(event.data);
-          }
-        };
-
-        mediaRecorder.onstop = () => {
-          const blob = new Blob(pedazoGrabado, { type: 'video/webm' });
-          const url = URL.createObjectURL(blob);
-          downloadLink.href = url;
-          downloadLink.style.display = 'block';
-          console.log("Grabación finalizada. URL para descarga:", url);
-        };
-
-        mediaRecorder.start();
-        console.log("Grabación iniciada...");
-        recordButton.disabled = true;
-        stopButton.disabled = false;
-        downloadLink.style.display = 'none';
-      } catch (err) {
-        console.error("Error al iniciar MediaRecorder:", err);
-        alert("No se pudo iniciar la grabación. ¿La webcam está activa?");
-      }
-    });
-
-    stopButton.addEventListener('click', () => {
-      if (mediaRecorder && mediaRecorder.state === 'recording') {
-        mediaRecorder.stop();
-        console.log("Grabación detenida.");
-        recordButton.disabled = false;
-        stopButton.disabled = true;
-      }
-    });
-
-    if (nombreVideo) {
-      videoElement.src = nombreVideo;
-      videoElement.play();
-      startWebcam(); 
-    } else {
-      document.querySelector('.video-container').innerHTML = `
-        <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video de karaoke.</p>
-        <a href="index.html" class="back-button">Volver a artistas</a>
-      `;
+    async function initWebcamAndAudio() {
+        try {
+            webcamStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+            webcamElement.srcObject = webcamStream;
+            console.log("Webcam y micrófono iniciados correctamente.");
+        } catch (err) {
+            console.error("Error al acceder a la webcam/micrófono: ", err);
+            webcamElement.style.display = 'none';
+            const container = document.querySelector('.video-container');
+            const errorMessage = document.createElement('p');
+            errorMessage.style.cssText = "font-size: 1.2rem; color: #ff6b6b; text-align: center; margin-top: 20px;";
+            errorMessage.textContent = "No se pudo acceder a la cámara/micrófono. Asegúrate de haber dado permiso.";
+            container.insertBefore(errorMessage, videoElement);
+            return false;
+        }
+        return true;
     }
+
+    function iniciarRecording() {
+        if (!webcamStream) {
+            console.error("No hay stream de webcam disponible para grabar.");
+            return;
+        }
+        recordedChunks = [];
+        try {
+            let options = { mimeType: 'video/webm' };
+            if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+                console.warn(`${options.mimeType} no soportado, intentando con 'video/webm;codecs=vp8'`);
+                options = { mimeType: 'video/webm;codecs=vp8' };
+                if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+                    console.error("Ningún tipo de video/webm soportado por este navegador.");
+                    alert("Tu navegador no soporta la grabación de video en formato compatible.");
+                    return;
+                }
+            }
+
+            mediaRecorder = new MediaRecorder(webcamStream, options);
+
+            mediaRecorder.ondataavailable = (event) => {
+                if (event.data.size > 0) {
+                    recordedChunks.push(event.data);
+                }
+            };
+
+            mediaRecorder.onstop = () => {
+                console.log("Grabación detenida. Procesando para subir a Google Drive...");
+                const blob = new Blob(recordedChunks, { type: 'video/webm' });
+                
+                // *** CAMBIO: SUBIR A GOOGLE DRIVE EN VEZ DE DESCARGAR (TODAVIA NO FUNCIONA MUY BIEN) ***
+                if (window.isGoogleApiLoaded && gapi.auth2.getAuthInstance().isSignedIn.get()) {
+                    uploadToGoogleDrive(blob); 
+                } else {
+                    console.warn("Google Drive no está listo o el usuario no está autenticado. No se subirá el video.");
+                    qrSection.style.display = 'flex';
+                    qrCodeDiv.innerHTML = `<p style="color: #ff6b6b;">No se pudo subir a Google Drive. Por favor, revisa tus permisos.</p>`;
+                    document.getElementById('qr-message').textContent = "No se pudo subir tu video a Drive.";
+                }
+            };
+
+            mediaRecorder.start();
+            console.log("Grabación iniciada automáticamente...");
+        } catch (err) {
+            console.error("Error al iniciar MediaRecorder:", err);
+            alert("No se pudo iniciar la grabación automática. Revisa permisos de cámara/micrófono y el soporte de tu navegador.");
+        }
+    }
+
+    function stopRecording() {
+        if (mediaRecorder && mediaRecorder.state === 'recording') {
+            mediaRecorder.stop();
+        }
+    }
+
+    async function uploadToGoogleDrive(blob) {
+        if (!gapi.client || !gapi.client.drive || !gapi.auth2.getAuthInstance().isSignedIn.get()) {
+            console.error("Cliente de Google Drive no inicializado o usuario no autenticado al intentar subir (check final).");
+            qrSection.style.display = 'flex';
+            qrCodeDiv.innerHTML = `<p style="color: #ff6b6b;">Error de conexión con Google Drive. Recarga la página.</p>`;
+            document.getElementById('qr-message').textContent = "Hubo un problema de autenticación con Google Drive.";
+            return;
+        }
+
+        const fileName = `MiKaraoke_${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.webm`;
+        const metadata = {
+            'name': fileName,
+            'mimeType': 'video/webm',
+        };
+
+        const form = new FormData();
+        form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+        form.append('file', blob);
+
+        try {
+            const response = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
+                method: 'POST',
+                headers: new Headers({'Authorization': 'Bearer ' + gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse().access_token}),
+                body: form,
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(`Error al subir a Google Drive: ${response.status} - ${errorText}`);
+            }
+
+            const file = await response.json();
+            console.log('Archivo subido a Google Drive:', file);
+            
+            await makeFilePublic(file.id); 
+
+            const fileLink = `https://drive.google.com/file/d/${file.id}/view?usp=sharing`;
+            generateQRCode(fileLink);
+            
+            qrSection.style.display = 'flex'; 
+            console.log('Enlace del archivo:', fileLink);
+
+        } catch (error) {
+            console.error('Error al subir el archivo:', error);
+            qrSection.style.display = 'flex';
+            qrCodeDiv.innerHTML = `<p style="color: #ff6b6b;">Error al subir el video. Por favor, revisa la consola.</p>`;
+            document.getElementById('qr-message').textContent = "Hubo un problema al subir tu video.";
+        }
+    }
+
+    async function makeFilePublic(fileId) {
+        try {
+            await gapi.client.drive.permissions.create({
+                fileId: fileId,
+                resource: {
+                    type: 'anyone',
+                    role: 'reader'
+                }
+            });
+            console.log('Archivo configurado como público.');
+        } catch (error) {
+            console.error('Error al hacer el archivo público:', error);
+        }
+    }
+
+    function generateQRCode(text) {
+        qrCodeDiv.innerHTML = ''; 
+        new QRCode(qrCodeDiv, {
+            text: text,
+            width: 256,
+            height: 256,
+            colorDark : "#14071f",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    }
+
+    async function iniciarKaraokeSession() {
+        if (nombreVideo) {
+            videoElement.src = nombreVideo;
+            videoElement.load(); 
+            
+            videoElement.onloadedmetadata = () => {
+                videoDuration = videoElement.duration; 
+                console.log("Video de karaoke cargado. Duración:", videoDuration, "segundos.");
+
+                iniciarRecording(); 
+                videoElement.play();
+                              
+                setTimeout(() => {
+                    stopRecording();
+                    if (webcamStream) {
+                        webcamStream.getTracks().forEach(track => track.stop());
+                        webcamElement.srcObject = null;
+                        console.log("Webcam detenida.");
+                    }
+                }, videoDuration * 1000); 
+            };
+
+            videoElement.onerror = () => {
+                console.error("Error al cargar el video de karaoke:", videoElement.error);
+                document.querySelector('.video-container').innerHTML = `
+                  <p style="font-size: 1.5rem; color: #ff6b6b; text-align: center; margin-top: 50px;">Error al cargar el video de karaoke.</p>
+                  <a href="index.html" class="back-button">Volver a artistas</a>
+                `;
+            };
+
+        } else {
+            // Este caso ya lo manejó el DOMContentLoaded principal
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+        if (!nombreVideo) {
+            document.querySelector('.video-container').innerHTML = `
+              <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video de karaoke.</p>
+              <a href="index.html" class="back-button">Volver a artistas</a>
+            `;
+            return; 
+        }
+
+        // 1. Intentar iniciar Webcam y Audio PRIMERO
+        const webcamReady = await initWebcamAndAudio();
+
+        if (webcamReady) {
+            // 2. Si la webcam está lista, cargamos y autenticamos Google Drive API
+            // Usamos la función loadGoogleAPIandAuth que debe estar en autenticacion.js
+            try {
+                // gapi.load se hace una sola vez, aquí lo encapsulamos.
+                await loadGoogleAPIandAuth(); 
+                window.isGoogleApiLoaded = true; // Setear variable global si todo salió bien
+                console.log("Google Drive API inicializada y usuario autenticado (o intento previo).");
+            } catch (error) {
+                console.error("Fallo la inicialización o autenticación de Google Drive. La subida NO funcionará.", error);
+                window.isGoogleApiLoaded = false;
+                // No bloqueamos el karaoke si Google Drive falla, solo la subida.
+                // initWebcamAndAudio ya mostró un mensaje de error si la cámara falló.
+            }
+
+            // 3. Si la webcam está lista (independientemente de Google Drive), iniciar el conteo
+            iniciarCountdown(5);
+        } else {
+            console.log("No se pudo iniciar la sesión de karaoke porque la webcam no está disponible.");
+            // initWebcamAndAudio ya muestra un mensaje de error si falla.
+        }
+    });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

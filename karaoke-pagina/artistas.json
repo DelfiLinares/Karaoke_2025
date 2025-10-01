@@ -274,13 +274,13 @@
         "idCancion": "68a61c5341ac8857c890ae34",
         "titulo": "Give Me Everything",
         "duracion": "4:15",
-        "video": ""
+        "video": "videosKaraoke/GiveMeEverything.mp4"
       },
       {
         "idCancion": "68a61db141ac8857c890ae35",
         "titulo": "Timber",
         "duracion": "3:23",
-        "video": ""
+        "video": "videosKaraoke/timber.mp4"
       },
       {
         "idCancion": "68a61ebf41ac8857c890ae36",
@@ -292,11 +292,11 @@
         "idCancion": "68af4d765d5beecd476c007f",
         "titulo": "Hotel Room Service",
         "duracion": "4:00",
-        "video": ""
+        "video": "videosKaraoke/HotelRoomService.mp4"
       },
             {
         "idCancion": "68af4d765d5beecd476c007f",
-        "titulo": "We are one (Ole Ola)",
+        "titulo": "Fireball",
         "duracion": "3:43",
         "video": ""
       }
@@ -312,36 +312,36 @@
       "idCancion": "AG1",
       "titulo": "The Boy Is Mine",
       "duracion": "3:01",
-      "video": " //TheBoyIsMine.mp4"
+      "video": " videosKaraoke/TheBoyIsMine.mp4"
     },
     {
       "idCancion": "AG2",
       "titulo": "7 Rings",
       "duracion": "2:57",
-      "video": " //7rings.mp4"
+      "video": " videosKaraoke/7rings.mp4"
     },
     {
       "idCancion": "AG3",
       "titulo": "thank u, next",
       "duracion": "3:36",
-      "video": " //ThankUNext.mp4"
+      "video": " videosKaraoke/ThankUNext.mp4"
     },
     {
       "titulo": "yes, and?",
       "duracion": "3:41",
-      "video": " //YesAnd.mp4",
+      "video": " videosKaraoke/YesAnd.mp4",
       "idCancion": "AG4"
     },
     {
       "titulo": "Break Free",
       "duracion": "3:44",
-      "video": " //BreakFree.mp4",
+      "video": " videosKaraoke/BreakFree.mp4",
       "idCancion": "AG5"
     },
     {
       "titulo": "Dangerous Woman",
       "duracion": "4:02",
-      "video": " //DangerousWoman.mp4",
+      "video": " videosKaraoke/DangerousWoman.mp4",
       "idCancion": "AG6"
     }
   ]
@@ -562,7 +562,7 @@
     "genero": "Latino",
     "canciones": [
       { "idCancion": "SHA1", "titulo": "Hips Don't Lie", "duracion": "03:38", "video": "" },
-      { "idCancion": "SHA2", "titulo": "Waka Waka", "duracion": "03:22", "video": "" },
+      { "idCancion": "SHA2", "titulo": "Waka Waka", "duracion": "03:22", "video": "videosKaraoke/WakaWaka.mp4" },
       { "idCancion": "SHA3", "titulo": "La Tortura", "duracion": "03:33", "video": "" },
       { "idCancion": "SHA4", "titulo": "Chantaje", "duracion": "03:16", "video": "" },
       { "idCancion": "SHA5", "titulo": "Loca", "duracion": "03:03", "video": "" },

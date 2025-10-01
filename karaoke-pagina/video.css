@@ -7,25 +7,27 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px; 
+  padding: 20px;
+  position: relative; 
 }
 
 #webcam-stream {
   width: 20%;
-  height: 150px; 
-  background-color: #2a1a3a; 
-  margin-bottom: 20px; 
+  height: 150px;
+  background-color: #2a1a3a;
+  margin-bottom: 20px;
   border-radius: 10px;
-  object-fit: cover; 
+  object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: scaleX(-1);
 }
 
 #reproductor {
-  width: 90%; 
-  max-width: 1200px; 
-  height: auto; 
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
   max-height: calc(100vh - 200px - 60px);
   border: 2px solid #453553;
   border-radius: 10px;
@@ -51,47 +53,69 @@ h1 {
   display: none;
 }
 
-.controls {
-      margin-top: 15px;
+    #countdown-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85); 
       display: flex;
-      gap: 10px;
-    }
-    .controls button {
-      padding: 10px 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .controls button#recordButton {
-      background-color: #dc3545; /* Rojo para grabar */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000; 
       color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 10rem; 
+      opacity: 0; 
+      transition: opacity 0.5s ease-out; 
     }
-    .controls button#recordButton:hover {
-      background-color: #c82333;
+    #countdown-overlay.show {
+      opacity: 1;
     }
-    .controls button#stopButton {
-      background-color: #007bff; /* Azul para detener */
-      color: white;
+    #countdown-overlay.hide {
+        opacity: 0;
+        pointer-events: none; 
     }
-    .controls button#stopButton:hover {
-      background-color: #0069d9;
+    #countdown-number {
+      text-shadow: 0 0 20px #e6e6fa, 0 0 30px #e6e6fa, 0 0 40px #e6e6fa, 0 0 50px #8a2be2, 0 0 60px #8a2be2, 0 0 70px #8a2be2;
+      animation: pulsate 1s infinite alternate;
     }
-    .controls button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
+    @keyframes pulsate {
+      from { transform: scale(0.9); opacity: 0.8; }
+      to { transform: scale(1.1); opacity: 1; }
     }
-    #downloadLink {
-      margin-top: 15px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      color: #28a745; /* Verde para el enlace de descarga */
-      text-decoration: none;
+
+    #qr-section {
       display: none; /* Oculto por defecto */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(20, 7, 31, 0.95); /* Fondo similar al del cuerpo */
+      z-index: 1001; /* Por encima de todo, incluso del contador */
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
     }
-    #downloadLink:hover {
-      color: #218838;
-      text-decoration: underline;
+    #qr-section h2 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #e6e6fa;
+    }
+    #qr-code {
+        margin: 20px 0;
+        background-color: white; /* El QR se ve mejor sobre fondo blanco */
+        padding: 10px;
+        border-radius: 8px;
+    }
+    #qr-message {
+        font-size: 1.2rem;
+        color: #c4aee6;
+        margin-top: 10px;
     }
