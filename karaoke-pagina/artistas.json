@@ -576,13 +576,13 @@
     "imagen": "img/daddy.jpg",
     "genero": "Latino",
     "canciones": [
-      { "idCancion": "DY1", "titulo": "Gasolina", "duracion": "03:12", "video": "" },
-      { "idCancion": "DY2", "titulo": "Dura", "duracion": "03:20", "video": "" },
-      { "idCancion": "DY3", "titulo": "Limbo", "duracion": "03:41", "video": "" },
-      { "idCancion": "DY4", "titulo": "Con Calma", "duracion": "03:13", "video": "" },
-      { "idCancion": "DY5", "titulo": "Shaky Shaky", "duracion": "03:44", "video": "" },
-      { "idCancion": "DY6", "titulo": "Rompe", "duracion": "03:09", "video": "" },
-      { "idCancion": "DY7", "titulo": "Lo Que Pasó, Pasó", "duracion": "03:30", "video": "" }
+      { "idCancion": "DY1", "titulo": "Gasolina", "duracion": "03:12", "video": "videosKaraoke/gasolina.mp4" },
+      { "idCancion": "DY2", "titulo": "Dura", "duracion": "03:20", "video": "videosKaraoke/dura.mp4" },
+      { "idCancion": "DY3", "titulo": "Limbo", "duracion": "03:41", "video": "videosKaraoke/limbo.mp4" },
+      { "idCancion": "DY4", "titulo": "Con Calma", "duracion": "03:13", "video": "videosKaraoke/conCalma.mp4" },
+      { "idCancion": "DY5", "titulo": "Shaky Shaky", "duracion": "03:44", "video": "videosKaraoke/shaky.mp4" },
+      { "idCancion": "DY6", "titulo": "Rompe", "duracion": "03:09", "video": "videosKaraoke/rompe.mp4" },
+      { "idCancion": "DY7", "titulo": "Lo Que Pasó, Pasó", "duracion": "03:30", "video": "videosKaraoke/loQuePaso.mp4" }
     ]
   },
   {
