@@ -561,13 +561,13 @@
     "imagen": "img/shakira.webp",
     "genero": "Latino",
     "canciones": [
-      { "idCancion": "SHA1", "titulo": "Hips Don't Lie", "duracion": "03:38", "video": "" },
+      { "idCancion": "SHA1", "titulo": "Hips Don't Lie", "duracion": "03:38", "video": "videosKaraoke/hipsDontLie.mp4" },
       { "idCancion": "SHA2", "titulo": "Waka Waka", "duracion": "03:22", "video": "videosKaraoke/WakaWaka.mp4" },
-      { "idCancion": "SHA3", "titulo": "La Tortura", "duracion": "03:33", "video": "" },
-      { "idCancion": "SHA4", "titulo": "Chantaje", "duracion": "03:16", "video": "" },
-      { "idCancion": "SHA5", "titulo": "Loca", "duracion": "03:03", "video": "" },
-      { "idCancion": "SHA6", "titulo": "Antología", "duracion": "04:16", "video": "" },
-      { "idCancion": "SHA7", "titulo": "Ojos Así", "duracion": "03:54", "video": "" }
+      { "idCancion": "SHA3", "titulo": "La Tortura", "duracion": "03:33", "video": "videosKaraoke/laTortura.mp4" },
+      { "idCancion": "SHA4", "titulo": "Chantaje", "duracion": "03:16", "video": "videosKaraoke/chantaje.mp4" },
+      { "idCancion": "SHA5", "titulo": "Loca", "duracion": "03:03", "video": "videosKaraoke/Loca.mp4" },
+      { "idCancion": "SHA6", "titulo": "Antología", "duracion": "04:16", "video": "videosKaraoke/antologia.mp4" },
+      { "idCancion": "SHA7", "titulo": "Ojos Así", "duracion": "03:54", "video": "videosKaraoke/ojosAsi.mp4" }
     ]
   },
   {
