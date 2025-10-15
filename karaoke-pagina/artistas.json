@@ -4,71 +4,65 @@
     "imagen": "img/nirvana.avif",
     "genero": "Rock",
     "canciones": [
-      {
-        "idCancion": "685c524c9e41b25d35f2a2a5",
-        "titulo": "Aneurysm",
-        "duracion": "",
-        "video": ""
-      },
             {
         "idCancion": "NIR1",
         "titulo": "Aneurysm",
         "duracion": "04:35",
-        "video": ""
+        "video": "videoskaraoke/aneurysm.mp4"
       },
       {
         "idCancion": "NIR2",
         "titulo": "Smells Like Teen Spirit",
         "duracion": "05:01",
-        "video": ""
+        "video": "videoskaraoke/teenSpirit.mp4"
       },
       {
         "idCancion": "NIR3",
         "titulo": "Come As You Are",
         "duracion": "03:39",
-        "video": ""
+        "video": "videoskaraoke/asYouAre.mp4"
       },
       {
         "idCancion": "NIR4",
         "titulo": "Lithium",
         "duracion": "04:17",
-        "video": ""
+        "video": "videoskaraoke/lithium.mp4"
       },
       {
         "idCancion": "NIR5",
         "titulo": "Heart-Shaped Box",
         "duracion": "04:41",
-        "video": ""
+        "video": "videoskaraoke/heartshapedBox.mp4"
       },
       {
         "idCancion": "NIR6",
         "titulo": "In Bloom",
         "duracion": "04:15",
-        "video": ""
+        "video": "videoskaraoke/inBloom.mp4"
       },
       {
         "idCancion": "NIR7",
         "titulo": "About a Girl",
         "duracion": "03:39",
-        "video": ""
+        "video": "videoskaraoke/aboutaGirl.mp4"
       },
       {
         "idCancion": "NIR8",
         "titulo": "All Apologies",
         "duracion": "03:51",
-        "video": ""
+        "video": "videoskaraoke/allApologies.mp4"
       },
       {
         "idCancion": "NIR9",
         "titulo": "Rape Me",
         "duracion": "02:49",
-        "video": ""
+        "video": "videoskaraoke/rapeMe.mp4"
       },
       {
         "idCancion": "NIR10",
         "titulo": "Polly",
         "duracion": "02:57",
-        "video": ""
+        "video": "videoskaraoke/polly.mp4"
       }
     ]
   },
@@ -106,7 +100,7 @@
       "idCancion": "CX5",
       "titulo": "Good Ones",
       "duracion": "02:16",
-      "video": " videoskaraoke/goodOnes.mp4"
+      "video": "videoskaraoke/goodOnes.mp4"
     },
     {
       "idCancion": "CX6",
