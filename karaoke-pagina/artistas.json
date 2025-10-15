@@ -82,61 +82,61 @@
       "idCancion": "CX1",
       "titulo": "Vroom Vroom",
       "duracion": "3:13",
-      "video": "tito.mp4"
+      "video": "videoskaraoke/vroomVroom.mp4"
     },
     {
       "idCancion": "CX2",
       "titulo": "Boom Clap",
       "duracion": "2:49",
-      "video": "/boomClap.mp4"
+      "video": "videoskaraoke/boomClap.mp4"
     },
     {
       "idCancion": "CX3",
       "titulo": "Apple",
       "duracion": "2:31",
-      "video": "/apple.mp4"
+      "video": "videoskaraoke/apple.mp4"
     },
     {
       "idCancion": "CX4",
       "titulo": "360",
       "duracion": "02:14",
-      "video": "/360.mp4"
+      "video": "videoskaraoke/360.mp4"
     },
     {
       "idCancion": "CX5",
       "titulo": "Good Ones",
       "duracion": "02:16",
-      "video": " //goodOnes.mp4"
+      "video": " videoskaraoke/goodOnes.mp4"
     },
     {
       "idCancion": "CX6",
       "titulo": "Von Dutch",
       "duracion": "02:44",
-      "video": "/vonDutch.mp4"
+      "video": "videoskaraoke/vonDutch.mp4"
     },
     {
       "idCancion": "CX7",
       "titulo": "I love it",
       "duracion": "02:37",
-      "video": "/iLoveIt.mp4"
+      "video": "videoskaraoke/iLoveIt.mp4"
     },
     {
       "idCancion": "CX8",
       "titulo": "Baby",
       "duracion": "02:39",
-      "video": "/babyCharli.mp4"
+      "video": "videoskaraoke/babyCharli.mp4"
     },
     {
       "idCancion": "CX9",
       "titulo": "Girl, so confusing featuring lorde",
       "duracion": "03:25",
-      "video": "/girlsoconfusing.mp4"
+      "video": "videoskaraoke/girlsoconfusing.mp4"
     },
     {
       "idCancion": "CX10",
       "titulo": "Speedrive",
       "duracion": "01:57",
-      "video": "/speedrive.mp4"
+      "video": "videoskaraoke/speedrive.mp4"
     }
   ]
   },
