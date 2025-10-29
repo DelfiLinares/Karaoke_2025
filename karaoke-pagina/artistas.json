@@ -714,7 +714,7 @@
     { "idCancion": "ACDC2", "titulo": "Highway to Hell", "duracion": "03:28", "video": "videosKaraoke/highwayToHell.mp4" },
     { "idCancion": "ACDC3", "titulo": "Thunderstruck", "duracion": "04:52", "video": "videosKaraoke/thunderstruck.mp4" },
     { "idCancion": "ACDC4", "titulo": "You Shook Me All Night Long", "duracion": "03:30", "video": "videosKaraoke/allNightLong.mp4" },
-    { "idCancion": "ACDC5", "titulo": "T.N.T.", "duracion": "03:34", "video": "videosKarake/tnt.mp4" }
+    { "idCancion": "ACDC5", "titulo": "T.N.T.", "duracion": "03:34", "video": "videosKaraoke/tnt.mp4" }
   ]
 },
 {
