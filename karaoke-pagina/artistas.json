@@ -686,11 +686,11 @@
   "imagen": "img/beatles.jpg",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "B1", "titulo": "Hey Jude", "duracion": "07:11", "video": "" },
-    { "idCancion": "B2", "titulo": "Let It Be", "duracion": "04:03", "video": "" },
-    { "idCancion": "B3", "titulo": "Yesterday", "duracion": "02:05", "video": "" },
-    { "idCancion": "B4", "titulo": "Come Together", "duracion": "04:19", "video": "" },
-    { "idCancion": "B5", "titulo": "Help!", "duracion": "02:18", "video": "" }
+    { "idCancion": "B1", "titulo": "Hey Jude", "duracion": "07:11", "video": "videosKaraoke/heyJude.mp4" },
+    { "idCancion": "B2", "titulo": "Let It Be", "duracion": "04:03", "video": "videosKaraoke/letItBe.mp4" },
+    { "idCancion": "B3", "titulo": "Yesterday", "duracion": "02:05", "video": "videosKaraoke/yesterday.mp4" },
+    { "idCancion": "B4", "titulo": "Come Together", "duracion": "04:19", "video": "videosKaraoke/comeTogether.mp4" },
+    { "idCancion": "B5", "titulo": "Help!", "duracion": "02:18", "video": "videosKaraoke/help.mp4" }
   ]
 },
 {
