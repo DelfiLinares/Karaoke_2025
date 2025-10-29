@@ -762,11 +762,11 @@
   "imagen": "img/bonjovi.jpg",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "BJ1", "titulo": "Livin' on a Prayer", "duracion": "04:09", "video": "" },
-    { "idCancion": "BJ2", "titulo": "It's My Life", "duracion": "03:44", "video": "" },
-    { "idCancion": "BJ3", "titulo": "Always", "duracion": "05:53", "video": "" },
-    { "idCancion": "BJ4", "titulo": "You Give Love a Bad Name", "duracion": "03:43", "video": "" },
-    { "idCancion": "BJ5", "titulo": "Wanted Dead or Alive", "duracion": "05:09", "video": "" }
+    { "idCancion": "BJ1", "titulo": "Livin' on a Prayer", "duracion": "04:09", "video": "videosKaraoke/livinOnPrayer.mp4" },
+    { "idCancion": "BJ2", "titulo": "It's My Life", "duracion": "03:44", "video": "videosKaraoke/myLife.mp4" },
+    { "idCancion": "BJ3", "titulo": "Always", "duracion": "05:53", "video": "videosKaraoke/always.mp4" },
+    { "idCancion": "BJ4", "titulo": "You Give Love a Bad Name", "duracion": "03:43", "video": "videosKaraoke/badName.mp4" },
+    { "idCancion": "BJ5", "titulo": "Wanted Dead or Alive", "duracion": "05:09", "video": "videosKaraoke/deadOrAlive.mp4" }
   ]
 },
 {
