@@ -657,14 +657,14 @@
   "imagen": "img/guns.webp",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "GNR1", "titulo": "Sweet Child O' Mine", "duracion": "05:56", "video": "" },
-    { "idCancion": "GNR2", "titulo": "November Rain", "duracion": "08:57", "video": "" },
-    { "idCancion": "GNR3", "titulo": "Welcome to the Jungle", "duracion": "04:32", "video": "" },
-    { "idCancion": "GNR4", "titulo": "Paradise City", "duracion": "06:46", "video": "" },
-    { "idCancion": "GNR5", "titulo": "Don't Cry", "duracion": "04:44", "video": "" },
-    { "idCancion": "GNR6", "titulo": "Knockin' on Heaven's Door", "duracion": "05:36", "video": "" },
-    { "idCancion": "GNR7", "titulo": "Patience", "duracion": "05:56", "video": "" },
-    { "idCancion": "GNR9", "titulo": "You Could Be Mine", "duracion": "05:44", "video": "" }
+    { "idCancion": "GNR1", "titulo": "Sweet Child O' Mine", "duracion": "05:56", "video": "videosKaraoke/sweetChild.mp4" },
+    { "idCancion": "GNR2", "titulo": "November Rain", "duracion": "08:57", "video": "videosKaraoke/novemberRain.mp4" },
+    { "idCancion": "GNR3", "titulo": "Welcome to the Jungle", "duracion": "04:32", "video": "videosKaraoke/theJungle.mp4" },
+    { "idCancion": "GNR4", "titulo": "Paradise City", "duracion": "06:46", "video": "videosKaraoke/paradiseCity.mp4" },
+    { "idCancion": "GNR5", "titulo": "Don't Cry", "duracion": "04:44", "video": "videosKaraoke/dontCry.mp4" },
+    { "idCancion": "GNR6", "titulo": "Knockin' on Heaven's Door", "duracion": "05:36", "video": "videosKaraoke/heavensDoor.mp4" },
+    { "idCancion": "GNR7", "titulo": "Patience", "duracion": "05:56", "video": "videosKaraoke/patience.mp4" },
+    { "idCancion": "GNR9", "titulo": "You Could Be Mine", "duracion": "05:44", "video": "videosKaraoke/couldBeMine.mp4" }
   ]
 },
 {
