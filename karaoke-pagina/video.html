@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karaoke Automático con Google Drive</title>
+  <title>Karaoke Automático</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="artistas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="video.css">
-
 </head>
 
 <body>
@@ -21,237 +19,272 @@
     </div>
 
     <section id="qr-section">
-        <h2>¡Tu karaoke está listo!</h2>
-        <p id="qr-message">Escanea este código para ver/descargar tu video:</p>
-        <div id="qr-code"></div>
-        <p style="font-size: 0.9rem; color: #9a8c98; margin-top: 20px;">Puede tardar unos segundos en estar disponible</p>
-        <a href="index.html" class="back-button" style="z-index: 1002;">Volver a artistas</a>
+      <div class="success-icon">🎉</div>
+      <h2>¡Tu karaoke está listo!</h2>
+      <p id="qr-message">Escanea este código QR con tu celular para descargar el video:</p>
+      <div id="qr-code">Cargando...</div>
+      <p id="qr-info">El video está guardado en tu red local.</p>
+      <a href="index.html" class="btn-volver-qr">🎤 Cantar otra canción</a>
     </section>
 
     <video id="webcam-stream" autoplay playsinline muted></video>
-
-
     <video id="reproductor" controls></video>
-
-    <a href="javascript:history.back()" class="back-button" style="z-index: 999;">Volver al artista</a>
   </main>
 
+  <div id="debug-console"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+    // Sistema de debugging visual
+    function debugLog(message, type = 'info') {
+      const debugConsole = document.getElementById('debug-console');
+      const timestamp = new Date().toLocaleTimeString();
+      const emoji = type === 'error' ? '❌' : type === 'success' ? '✅' : 'ℹ️';
+      debugConsole.innerHTML += `[${timestamp}] ${emoji} ${message}<br>`;
+      debugConsole.scrollTop = debugConsole.scrollHeight;
+      console.log(`${emoji} ${message}`);
+    }
 
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const nombreVideo = urlParams.get('video');
-  const videoElement = document.getElementById('reproductor');
-  const webcamElement = document.getElementById('webcam-stream');
-  const countdownOverlay = document.getElementById('countdown-overlay');
-  const countdownNumber = document.getElementById('countdown-number');
-  const qrSection = document.getElementById('qr-section');
-  const qrCodeDiv = document.getElementById('qr-code');
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombreVideo = urlParams.get('video');
+    const videoElement = document.getElementById('reproductor');
+    const webcamElement = document.getElementById('webcam-stream');
+    const countdownOverlay = document.getElementById('countdown-overlay');
+    const countdownNumber = document.getElementById('countdown-number');
+    const qrSection = document.getElementById('qr-section');
+    const qrCodeDiv = document.getElementById('qr-code');
 
-  let mediaRecorder;
-  let recordedChunks = [];
-  let webcamStream;
-  let videoDuration = 0;
+    let mediaRecorder;
+    let recordedChunks = [];
+    let webcamStream;
+    let videoDuration = 0;
 
-  // --- Funciones de Conteo Regresivo y Webcam ---
-  function iniciarCountdown(duration) {
-    countdownOverlay.classList.add('show');
-    let count = duration;
-    countdownNumber.textContent = count;
+    debugLog('Página cargada');
+    debugLog(`Video a reproducir: ${nombreVideo || 'NO DEFINIDO'}`);
 
-    const interval = setInterval(() => {
-      count--;
+    function iniciarCountdown(duration) {
+      debugLog(`Iniciando countdown de ${duration} segundos`);
+      countdownOverlay.classList.add('show');
+      let count = duration;
       countdownNumber.textContent = count;
-      if (count <= 0) {
-        clearInterval(interval);
-        countdownOverlay.classList.remove('show');
-        countdownOverlay.classList.add('hide');
-        setTimeout(iniciarKaraokeSession, 500);
-      }
-    }, 1000);
-  }
 
-  async function initWebcamAndAudio() {
-    try {
-      webcamStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-      webcamElement.srcObject = webcamStream;
-      console.log("Webcam y micrófono iniciados correctamente.");
-    } catch (err) {
-      console.error("Error al acceder a la webcam/micrófono: ", err);
-      webcamElement.style.display = 'none';
-      const container = document.querySelector('.video-container');
-      const errorMessage = document.createElement('p');
-      errorMessage.style.cssText = "font-size: 1.2rem; color: #ff6b6b; text-align: center; margin-top: 20px;";
-      errorMessage.textContent = "No se pudo acceder a la cámara/micrófono. Asegúrate de haber dado permiso.";
-      container.insertBefore(errorMessage, videoElement);
-      return false;
-    }
-    return true;
-  }
-
-  function iniciarRecording() {
-    if (!webcamStream) {
-      console.error("No hay stream de webcam disponible para grabar.");
-      return;
-    }
-
-    recordedChunks = [];
-    try {
-      let options = { mimeType: 'video/webm' };
-      if (!MediaRecorder.isTypeSupported(options.mimeType)) {
-        options = { mimeType: 'video/webm;codecs=vp8' };
-      }
-
-      mediaRecorder = new MediaRecorder(webcamStream, options);
-
-      mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          recordedChunks.push(event.data);
+      const interval = setInterval(() => {
+        count--;
+        countdownNumber.textContent = count;
+        if (count <= 0) {
+          clearInterval(interval);
+          countdownOverlay.classList.remove('show');
+          debugLog('Countdown terminado, iniciando karaoke');
+          setTimeout(iniciarKaraokeSession, 500);
         }
-      };
+      }, 1000);
+    }
+
+    async function initWebcamAndAudio() {
+      try {
+        debugLog('Solicitando acceso a webcam y micrófono...');
+        webcamStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        webcamElement.srcObject = webcamStream;
+        debugLog('Webcam y micrófono iniciados correctamente', 'success');
+        return true;
+      } catch (err) {
+        debugLog(`Error al acceder a webcam: ${err.message}`, 'error');
+        webcamElement.style.display = 'none';
+        const container = document.querySelector('.video-container');
+        const errorMessage = document.createElement('p');
+        errorMessage.style.cssText = "font-size: 1.2rem; color: #ff6b6b; text-align: center; margin-top: 20px;";
+        errorMessage.textContent = "No se pudo acceder a la cámara/micrófono. Asegúrate de haber dado permiso.";
+        container.insertBefore(errorMessage, videoElement);
+        return false;
+      }
+    }
+
+    function iniciarRecording() {
+      if (!webcamStream) {
+        debugLog('No hay stream de webcam disponible', 'error');
+        return;
+      }
+
+      recordedChunks = [];
+      try {
+        let options = { mimeType: 'video/webm' };
+        if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+          options = { mimeType: 'video/webm;codecs=vp8' };
+          debugLog('Usando codec vp8');
+        }
+
+        mediaRecorder = new MediaRecorder(webcamStream, options);
+
+        mediaRecorder.ondataavailable = (event) => {
+          if (event.data.size > 0) {
+            recordedChunks.push(event.data);
+            debugLog(`Chunk grabado: ${event.data.size} bytes`);
+          }
+        };
 
         mediaRecorder.onstop = () => {
-        console.log("Grabación detenida. Subiendo el video...");
-        const blob = new Blob(recordedChunks, { type: 'video/webm' });
-        // Llamamos a la nueva función
-        uploadLocal(blob); 
+          debugLog('Grabación detenida, procesando video...', 'success');
+          const blob = new Blob(recordedChunks, { type: 'video/webm' });
+          debugLog(`Blob creado: ${blob.size} bytes`);
+          uploadLocal(blob);
+        };
+
+        mediaRecorder.start();
+        debugLog('Grabación iniciada', 'success');
+      } catch (err) {
+        debugLog(`Error al iniciar MediaRecorder: ${err.message}`, 'error');
+        alert("No se pudo iniciar la grabación. Revisa los permisos.");
+      }
+    }
+
+    function stopRecording() {
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        debugLog('Deteniendo grabación...');
+        mediaRecorder.stop();
+      }
+    }
+
+    async function uploadLocal(blob) {
+      const status = document.getElementById("qr-message");
+      const qrInfo = document.getElementById("qr-info");
+
+      debugLog(`Preparando subida de ${blob.size} bytes`);
+
+      const formData = new FormData();
+      formData.append('file', blob, 'karaoke-video.webm');
+
+      // PREVENIR CUALQUIER RECARGA
+      window.onbeforeunload = function() {
+        return "¿Seguro que quieres salir? Tu QR está listo.";
       };
 
-      mediaRecorder.start();
-      console.log("Grabación iniciada automáticamente...");
-    } catch (err) {
-      console.error("Error al iniciar MediaRecorder:", err);
-      alert("No se pudo iniciar la grabación automática. Revisa permisos de cámara/micrófono y el soporte de tu navegador.");
+      try {
+        status.textContent = "⏳ Procesando tu actuación...";
+        qrInfo.textContent = "Esto puede tomar unos segundos...";
+        qrSection.style.display = "flex";
+        qrCodeDiv.innerHTML = "Subiendo al servidor...";
+        
+        debugLog('Enviando POST a http://localhost:5000/upload');
+
+        const response = await fetch("http://localhost:5000/upload", {
+          method: "POST",
+          body: formData
+        });
+
+        debugLog(`Respuesta recibida: status ${response.status}`);
+
+        if (!response.ok) {
+          throw new Error(`Error HTTP: ${response.status}`);
+        }
+
+        const result = await response.json();
+        debugLog(`Respuesta JSON: ${JSON.stringify(result)}`, 'success');
+
+        if (!result.success) {
+          throw new Error(result.error || 'Error en el servidor local.');
+        }
+
+        // Generar QR con la URL
+        const link = result.url;
+        debugLog(`Generando QR con URL: ${link}`, 'success');
+        
+        qrCodeDiv.innerHTML = "";
+        
+        // Verificar que QRCode existe
+        if (typeof QRCode === 'undefined') {
+          debugLog('ERROR: Librería QRCode no está cargada!', 'error');
+          qrCodeDiv.innerHTML = `<p style="color: red;">Error: No se pudo cargar la librería de QR</p>`;
+          return;
+        }
+
+        new QRCode(qrCodeDiv, {
+          text: link,
+          width: 256,
+          height: 256,
+          colorDark: "#14071f",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H
+        });
+
+        debugLog('QR generado exitosamente', 'success');
+
+        status.textContent = "✅ ¡Listo! Escanea el QR para descargar tu video";
+        qrInfo.textContent = `URL: ${link}`;
+
+        // Ocultar el video de karaoke y la webcam
+        videoElement.style.display = 'none';
+        webcamElement.style.display = 'none';
+        
+        // Ocultar botón de volver si existe
+        const backBtn = document.querySelector('.back-button');
+        if (backBtn) backBtn.style.display = 'none';
+
+      } catch (error) {
+        debugLog(`ERROR EN UPLOAD: ${error.message}`, 'error');
+        qrCodeDiv.innerHTML = `<p style="color: #ff6b6b; font-weight: bold;">Error: ${error.message}</p>`;
+        status.textContent = "❌ No se pudo conectar con el servidor";
+        qrInfo.textContent = "Asegúrate de que el servidor Python esté ejecutándose (python servidor.py)";
+      }
     }
-  }
 
-  function stopRecording() {
-    if (mediaRecorder && mediaRecorder.state === 'recording') {
-      mediaRecorder.stop();
+    async function iniciarKaraokeSession() {
+      if (nombreVideo) {
+        debugLog(`Cargando video: ${nombreVideo}`);
+        videoElement.src = nombreVideo;
+        videoElement.load();
+
+        videoElement.onloadedmetadata = () => {
+          videoDuration = videoElement.duration;
+          debugLog(`Video cargado. Duración: ${videoDuration} seg`, 'success');
+
+          iniciarRecording();
+          videoElement.play();
+
+          videoElement.onended = () => {
+            debugLog('Video terminó - deteniendo grabación');
+            stopRecording();
+            if (webcamStream) {
+                webcamStream.getTracks().forEach(track => track.stop());
+                webcamElement.srcObject = null;
+                debugLog('Webcam detenida');
+            }
+          };
+        };
+
+        videoElement.onended = () => {
+            console.log("Video terminó - NO HACER NADA");
+        };
+
+        videoElement.onerror = () => {
+          debugLog(`Error al cargar video: ${videoElement.error}`, 'error');
+          document.querySelector('.video-container').innerHTML = `
+            <p style="font-size: 1.5rem; color: #ff6b6b; text-align: center; margin-top: 50px;">Error al cargar el video de karaoke.</p>
+            <a href="index.html" class="back-button">Volver a artistas</a>
+          `;
+        };
+      }
     }
-  }
 
-  // --- Subida python ---
-async function uploadLocal(blob) {
-  const status = document.getElementById("qr-message");
-  const qrSection = document.getElementById("qr-section");
-  const qrCodeDiv = document.getElementById("qr-code");
-
-  const formData = new FormData();
-  formData.append('file', blob, 'karaoke-video.webm');
-
-  try {
-    status.textContent = "⏳ Procesando tu actuación...";
-    qrSection.style.display = "flex";
-    console.log("Subiendo video al servidor local...");
-
-    // La magia sucede aquí: apuntamos a nuestro servidor Python
-    const response = await fetch("http://localhost:5000/upload", {
-      method: "POST",
-      body: formData
-    });
-
-    const result = await response.json();
-    console.log("Respuesta del servidor local:", result);
-
-    if (!result.success) {
-      throw new Error(result.error || 'Error en el servidor local.');
-    }
-
-    // ¡Éxito! El servidor nos dio la URL de red para el QR
-    const link = result.url;
-    qrCodeDiv.innerHTML = ""; 
-    new QRCode(qrCodeDiv, {
-      text: link,
-      width: 256,
-      height: 256,
-      colorDark: "#14071f",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.H
-    });
-
-    status.textContent = "✅ ¡Listo! Escanea el QR para llevarte tu video.";
-    console.log("✅ QR generado con la URL:", link);
-
-  } catch (error) {
-    console.error("❌ Error al subir al servidor local:", error);
-    qrCodeDiv.innerHTML = `<p style="color: #ff6b6b; font-weight: bold;">No se pudo conectar con el servidor local.</p>`;
-    status.textContent = `❌ Error: ${error.message}`;
-  }
-}
-
-  // --- Generación del QR ---
-  function mostrarQR(url) {
-    qrCodeDiv.innerHTML = '';
-    new QRCode(qrCodeDiv, {
-      text: url,
-      width: 256,
-      height: 256,
-      colorDark: "#14071f",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.H
-    });
-
-    qrSection.style.display = "flex";
-    document.getElementById("qr-message").textContent = "Escaneá el código para descargar tu video (válido por 1 día)";
-  }
-
-  // --- Inicia la sesión de karaoke ---
-  async function iniciarKaraokeSession() {
-    if (nombreVideo) {
-      videoElement.src = nombreVideo;
-      videoElement.load();
-
-      videoElement.onloadedmetadata = () => {
-        videoDuration = videoElement.duration;
-        console.log("Video de karaoke cargado. Duración:", videoDuration, "segundos.");
-
-        iniciarRecording();
-        videoElement.play();
-
-        setTimeout(() => {
-          stopRecording();
-          if (webcamStream) {
-            webcamStream.getTracks().forEach(track => track.stop());
-            webcamElement.srcObject = null;
-            console.log("Webcam detenida.");
-          }
-        }, videoDuration * 1000);
-      };
-
-      videoElement.onerror = () => {
-        console.error("Error al cargar el video de karaoke:", videoElement.error);
+    // Inicialización
+    document.addEventListener('DOMContentLoaded', async () => {
+      if (!nombreVideo) {
+        debugLog('No se encontró video en URL', 'error');
         document.querySelector('.video-container').innerHTML = `
-          <p style="font-size: 1.5rem; color: #ff6b6b; text-align: center; margin-top: 50px;">Error al cargar el video de karaoke.</p>
+          <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video de karaoke.</p>
           <a href="index.html" class="back-button">Volver a artistas</a>
         `;
-      };
-    }
-  }
+        return;
+      }
 
-  // --- Inicialización al cargar la página ---
-  document.addEventListener('DOMContentLoaded', async () => {
-    if (!nombreVideo) {
-      document.querySelector('.video-container').innerHTML = `
-        <p style="font-size: 1.5rem; color: #f0e6ff; text-align: center; margin-top: 50px;">No se seleccionó ningún video de karaoke.</p>
-        <a href="index.html" class="back-button">Volver a artistas</a>
-      `;
-      return;
-    }
+      const webcamReady = await initWebcamAndAudio();
 
-    const webcamReady = await initWebcamAndAudio();
-
-    if (webcamReady) {
-      iniciarCountdown(5);
-    } else {
-      console.log("No se pudo iniciar la sesión de karaoke porque la webcam no está disponible.");
-    }
-  });
-</script>
-
+      if (webcamReady) {
+        iniciarCountdown(3);
+      } else {
+        debugLog('No se pudo iniciar sesión', 'error');
+      }
+    });
+  </script>
 </body>
 </html>

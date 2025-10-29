@@ -119,3 +119,204 @@ h1 {
         color: #c4aee6;
         margin-top: 10px;
     }
+
+    body {
+      background-color: #14071f;
+      color: white;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    #webcam-stream {
+      width: 20%;
+      height: 150px;
+      background-color: #2a1a3a;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transform: scaleX(-1);
+    }
+
+    #reproductor {
+      width: 90%;
+      max-width: 1200px;
+      height: auto;
+      max-height: calc(100vh - 200px - 60px);
+      border: 2px solid #453553;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .back-button {
+      margin-top: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      color: #c4aee6;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-button:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    #countdown-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 10rem;
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+      pointer-events: none;
+    }
+
+    #countdown-overlay.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    #countdown-number {
+      text-shadow: 0 0 20px #e6e6fa, 0 0 30px #e6e6fa, 0 0 40px #e6e6fa, 0 0 50px #8a2be2, 0 0 60px #8a2be2, 0 0 70px #8a2be2;
+      animation: pulsate 1s infinite alternate;
+    }
+
+    @keyframes pulsate {
+      from {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+      to {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+
+    #qr-section {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(20, 7, 31, 0.98);
+      z-index: 2000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #qr-section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #e6e6fa;
+      text-shadow: 0 0 20px rgba(230, 230, 250, 0.5);
+    }
+
+    #qr-code {
+      margin: 30px 0;
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(138, 43, 226, 0.3);
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #qr-message {
+      font-size: 1.3rem;
+      color: #c4aee6;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    #qr-info {
+      font-size: 0.9rem;
+      color: #9a8c98;
+      margin-top: 20px;
+      max-width: 500px;
+    }
+
+    .btn-volver-qr {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #453553;
+      color: white;
+      border: 2px solid #6d5683;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-volver-qr:hover {
+      background-color: #5d4a6e;
+      border-color: #8a7099;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .success-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: scaleIn 0.5s ease-out;
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    #debug-console {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #00ff00;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 0.8rem;
+      max-width: 400px;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 9999;
+    }

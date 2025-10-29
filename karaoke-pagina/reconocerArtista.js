@@ -1,5 +1,5 @@
 function abrirVideo(nombreVideo) {
-  window.open('video.html?video=' + encodeURIComponent(nombreVideo), '_self');
+  window.location.href = 'video.html?video=' + encodeURIComponent(nombreVideo);
 }
 
 function mostrarDetallesArtista(artista) {
@@ -12,7 +12,7 @@ function mostrarDetallesArtista(artista) {
         const row = document.createElement('div');
         row.className = "row itemCancion";
         row.innerHTML = `
-        <button style="background-color:#2a1a3a" onclick="abrirVideo('${cancion.video}')">
+        <button type="button" style="background-color:#2a1a3a" onclick="event.preventDefault(); abrirVideo('${cancion.video}')">
             <h3>${cancion.titulo}</h3>
             <h5>${cancion.duracion}</h5>
         </button>
