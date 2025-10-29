@@ -723,11 +723,11 @@
   "imagen": "img/U2.webp",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "U21", "titulo": "With or Without You", "duracion": "04:56", "video": "" },
-    { "idCancion": "U22", "titulo": "One", "duracion": "04:36", "video": "" },
-    { "idCancion": "U23", "titulo": "Beautiful Day", "duracion": "04:08", "video": "" },
-    { "idCancion": "U24", "titulo": "I Still Haven't Found What I'm Looking For", "duracion": "04:37", "video": "" },
-    { "idCancion": "U25", "titulo": "Sunday Bloody Sunday", "duracion": "04:40", "video": "" }
+    { "idCancion": "U21", "titulo": "With or Without You", "duracion": "04:56", "video": "videosKaraoke/withOrwithout.mp4" },
+    { "idCancion": "U22", "titulo": "One", "duracion": "04:36", "video": "videosKaraoke/one.mp4" },
+    { "idCancion": "U23", "titulo": "Beautiful Day", "duracion": "04:08", "video": "videosKaraoke/beautifulDay.mp4" },
+    { "idCancion": "U24", "titulo": "I Still Haven't Found What I'm Looking For", "duracion": "04:37", "video": "videosKaraoke/haventFound.mp4" },
+    { "idCancion": "U25", "titulo": "Sunday Bloody Sunday", "duracion": "04:40", "video": "videosKaraoke/bloodySunday.mp4" }
   ]
 },
 {
