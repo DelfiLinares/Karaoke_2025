@@ -5,7 +5,7 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import uuid 
 
-UPLOAD_FOLDER = '../videos_grabados' 
+UPLOAD_FOLDER = 'videos_grabados' 
 PORT = 5000
 
 app = Flask(__name__)
