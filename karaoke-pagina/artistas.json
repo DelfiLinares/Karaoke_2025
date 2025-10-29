@@ -350,25 +350,25 @@
       "idCancion": "JB1",
       "titulo": "Baby",
       "duracion": "3:39",
-      "video": " //Baby.mp4"
+      "video": " videosKaraoke/Baby.mp4"
     },
     {
       "idCancion": "JB2",
       "titulo": "Peaches",
       "duracion": "3:22",
-      "video": " //Baby.mp4"
+      "video": " videosKaraoke/Baby.mp4"
     },
     {
       "idCancion": "JB3",
       "titulo": "Sorry",
       "duracion": "3:23",
-      "video": " //Baby.mp4"
+      "video": " videosKaraoke/Baby.mp4"
     },
     {
       "idCancion": "JB4",
       "titulo": "Love Yourself",
       "duracion": "4:01",
-      "video": " //Baby.mp4"
+      "video": " videosKaraoke/Baby.mp4"
     }
   ]
 },
@@ -382,49 +382,49 @@
       "idCancion": "LR1",
       "titulo": "Summertime Sadness",
       "duracion": "4:25",
-      "video": " //summertimesadness.mp4"
+      "video": " videosKaraoke/summertimesadness.mp4"
     },
     {
       "idCancion": "LR2",
       "titulo": "Ultraviolence",
       "duracion": "4:14",
-      "video": " //ultraviolence.mp4"
+      "video": " videosKaraoke/ultraviolence.mp4"
     },
     {
       "idCancion": "LR3",
       "titulo": "Ride",
       "duracion": "04:50",
-      "video": " //ride.mp4"
+      "video": " videosKaraoke/ride.mp4"
     },
     {
       "idCancion": "LR4",
       "titulo": "Doin' Time",
       "duracion": "03:21",
-      "video": " //dointime.mp4"
+      "video": " videosKaraoke/dointime.mp4"
     },
     {
       "idCancion": "LR5",
       "titulo": "West Coast",
       "duracion": "04:17",
-      "video": " //westcoast.mp4"
+      "video": " videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "National Anthem",
       "duracion": "03:51",
-      "video": " //westcoast.mp4"
+      "video": " videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Diet Mountain Dew",
       "duracion": "04:17",
-      "video": " //westcoast.mp4"
+      "video": " videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Video Games",
       "duracion": "4:17",
-      "video": " //westcoast.mp4"
+      "video": " videosKaraoke/westcoast.mp4"
     }]
 },
 {
@@ -437,61 +437,61 @@
       "idCancion": "BE1",
       "titulo": "Bad Guy",
       "duracion": "03:14",
-      "video": " //badGuy.mp4"
+      "video": " videosKaraoke/badGuy.mp4"
     },
     {
       "idCancion": "BE2",
       "titulo": "When The Party's Over",
       "duracion": "03:16",
-      "video": " //whenThePartysOver.mp4"
+      "video": " videosKaraoke/whenThePartysOver.mp4"
     },
     {
       "idCancion": "BE3",
       "titulo": "Ocean Eyes",
       "duracion": "03:20",
-      "video": " //oceanEyes.mp4"
+      "video": " videosKaraoke/oceanEyes.mp4"
     },
     {
       "idCancion": "BE4",
       "titulo": "Therefore I Am",
       "duracion": "02:54",
-      "video": " //thereforeIAm.mp4"
+      "video": " videosKaraoke/thereforeIAm.mp4"
     },
     {
       "idCancion": "BE5",
       "titulo": "Everything I Wanted",
       "duracion": "04:05",
-      "video": " //everythingIWanted.mp4"
+      "video": " videosKaraoke/everythingIWanted.mp4"
     },
     {
       "idCancion": "BE6",
       "titulo": "Lovely (con Khalid)",
       "duracion": "03:21",
-      "video": " //lovely.mp4"
+      "video": " videosKaraoke/lovely.mp4"
     },
     {
       "idCancion": "BE7",
       "titulo": "Bury a Friend",
       "duracion": "03:13",
-      "video": " //buryAFriend.mp4"
+      "video": " videosKaraoke/buryAFriend.mp4"
     },
     {
       "idCancion": "BE8",
       "titulo": "My Future",
       "duracion": "03:28",
-      "video": " //myFuture.mp4"
+      "video": " videosKaraoke/myFuture.mp4"
     },
     {
       "idCancion": "BE9",
       "titulo": "Your Power",
       "duracion": "04:05",
-      "video": " //yourPower.mp4"
+      "video": " videosKaraoke/yourPower.mp4"
     },
     {
       "idCancion": "BE10",
       "titulo": "Happier Than Ever",
       "duracion": "04:58",
-      "video": " //happierThanEver.mp4"
+      "video": " videosKaraoke/happierThanEver.mp4"
     }
   ]
 },
