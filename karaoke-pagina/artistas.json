@@ -585,10 +585,10 @@
     "imagen": "img/jbalvin.jpg",
     "genero": "Latino",
     "canciones": [
-      { "idCancion": "JB1", "titulo": "Mi Gente", "duracion": "03:09", "video": "" },
-      { "idCancion": "JB2", "titulo": "Ginza", "duracion": "03:12", "video": "" },
-      { "idCancion": "JB3", "titulo": "Safari", "duracion": "03:27", "video": "" },
-      { "idCancion": "JB4", "titulo": "Ay Vamos", "duracion": "03:39", "video": "" }
+      { "idCancion": "JB1", "titulo": "Mi Gente", "duracion": "03:09", "video": "videosKaraoke/miGente.mp4" },
+      { "idCancion": "JB2", "titulo": "Ginza", "duracion": "03:12", "video": "videosKaraoke/ginza.mp4" },
+      { "idCancion": "JB3", "titulo": "Safari", "duracion": "03:27", "video": "videosKaraoke/safari.mp4" },
+      { "idCancion": "JB4", "titulo": "Ay Vamos", "duracion": "03:39", "video": "videosKaraoke/ayVamos.mp4" }
     ]
   },
   {
