@@ -699,9 +699,9 @@
   "imagen": "img/rollingstones.webp",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "RS1", "titulo": "(I Can't Get No) Satisfaction", "duracion": "03:44", "video": "" },
-    { "idCancion": "RS2", "titulo": "Paint It Black", "duracion": "03:45", "video": "" },
-    { "idCancion": "RS5", "titulo": "Sympathy for the Devil", "duracion": "06:18", "video": "" }
+    { "idCancion": "RS1", "titulo": "(I Can't Get No) Satisfaction", "duracion": "03:44", "video": "videosKaraoke/noSatisfaction.mp4" },
+    { "idCancion": "RS2", "titulo": "Paint It Black", "duracion": "03:45", "video": "videosKaraoke/paintItBlack.mp4" },
+    { "idCancion": "RS5", "titulo": "Sympathy for the Devil", "duracion": "06:18", "video": "videosKaraoke/sympathyForDevil.mp4" }
   ]
 },
 {
