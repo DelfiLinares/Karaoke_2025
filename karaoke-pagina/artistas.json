@@ -749,11 +749,11 @@
   "imagen": "img/rhcp.jpg",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "RHCP1", "titulo": "Californication", "duracion": "05:21", "video": "" },
-    { "idCancion": "RHCP2", "titulo": "Under the Bridge", "duracion": "04:24", "video": "" },
-    { "idCancion": "RHCP3", "titulo": "Scar Tissue", "duracion": "03:37", "video": "" },
-    { "idCancion": "RHCP4", "titulo": "Otherside", "duracion": "04:15", "video": "" },
-    { "idCancion": "RHCP5", "titulo": "By the Way", "duracion": "03:37", "video": "" }
+    { "idCancion": "RHCP1", "titulo": "Californication", "duracion": "05:21", "video": "videosKaraoke/californication.mp4" },
+    { "idCancion": "RHCP2", "titulo": "Under the Bridge", "duracion": "04:24", "video": "videosKaraoke/underTheBridge.mp4" },
+    { "idCancion": "RHCP3", "titulo": "Scar Tissue", "duracion": "03:37", "video": "videosKaraoke/scarTissue.mp4" },
+    { "idCancion": "RHCP4", "titulo": "Otherside", "duracion": "04:15", "video": "videosKaraoke/otherSide.mp4" },
+    { "idCancion": "RHCP5", "titulo": "By the Way", "duracion": "03:37", "video": "videosKaraoke/byTheWay.mp4" }
   ]
 },
 {
