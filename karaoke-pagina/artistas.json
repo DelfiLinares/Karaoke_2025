@@ -736,11 +736,11 @@
   "imagen": "img/thepolice.jpg",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "TP1", "titulo": "Every Breath You Take", "duracion": "04:13", "video": "" },
-    { "idCancion": "TP2", "titulo": "Roxanne", "duracion": "03:12", "video": "" },
-    { "idCancion": "TP3", "titulo": "Message in a Bottle", "duracion": "04:51", "video": "" },
-    { "idCancion": "TP4", "titulo": "Don't Stand So Close to Me", "duracion": "04:02", "video": "" },
-    { "idCancion": "TP5", "titulo": "Walking on the Moon", "duracion": "05:02", "video": "" }
+    { "idCancion": "TP1", "titulo": "Every Breath You Take", "duracion": "04:13", "video": "videosKaraoke/everyBreath.mp4" },
+    { "idCancion": "TP2", "titulo": "Roxanne", "duracion": "03:12", "video": "videosKaraoke/roxanne.mp4" },
+    { "idCancion": "TP3", "titulo": "Message in a Bottle", "duracion": "04:51", "video": "videosKaraoke/messageInBottle.mp4" },
+    { "idCancion": "TP4", "titulo": "Don't Stand So Close to Me", "duracion": "04:02", "video": "videosKaraoke/dontStand.mp4" },
+    { "idCancion": "TP5", "titulo": "Walking on the Moon", "duracion": "05:02", "video": "videosKaraoke/walkingOn.mp4" }
   ]
 },
 {
