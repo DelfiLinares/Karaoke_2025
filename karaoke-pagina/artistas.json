@@ -644,11 +644,11 @@
   "imagen": "img/rosalia.jpg",
   "genero": "Latino",
   "canciones": [
-    { "idCancion": "RO1", "titulo": "DESPECHÁ", "duracion": "02:38", "video": "" },
-    { "idCancion": "RO2", "titulo": "Malamente", "duracion": "03:22", "video": "" },
-    { "idCancion": "RO3", "titulo": "Con Altura", "duracion": "02:41", "video": "" },
-    { "idCancion": "RO4", "titulo": "BIZCOCHITO", "duracion": "01:50", "video": "" },
-    { "idCancion": "RO6", "titulo": "Saoko", "duracion": "02:17", "video": "" }
+    { "idCancion": "RO1", "titulo": "DESPECHÁ", "duracion": "02:38", "video": "videosKaraoke/despecha.mp4" },
+    { "idCancion": "RO2", "titulo": "Malamente", "duracion": "03:22", "video": "videosKaraoke/malamente.mp4" },
+    { "idCancion": "RO3", "titulo": "Con Altura", "duracion": "02:41", "video": "videosKaraoke/conAltura.mp4" },
+    { "idCancion": "RO4", "titulo": "BIZCOCHITO", "duracion": "01:50", "video": "videosKaraoke/bizcochito.mp4" },
+    { "idCancion": "RO6", "titulo": "Saoko", "duracion": "02:17", "video": "videosKaraoke/saoko.mp4" }
   ]
 },
 {
