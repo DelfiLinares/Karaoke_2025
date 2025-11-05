@@ -608,8 +608,8 @@
   "imagen": "img/luismiguel.jpg",
   "genero": "Latino",
   "canciones": [
-    { "idCancion": "LM2", "titulo": "Ahora Te Puedes Marchar", "duracion": "02:54", "video": "" },
-    { "idCancion": "LM5", "titulo": "Cuando Calienta el Sol", "duracion": "03:22", "video": "" }
+    { "idCancion": "LM2", "titulo": "Ahora Te Puedes Marchar", "duracion": "02:54", "video": "videosKaraoke/marchar.mp4" },
+    { "idCancion": "LM5", "titulo": "Cuando Calienta el Sol", "duracion": "03:22", "video": "videosKaraoke/calientaSol.mp4" }
   ]
 },
 {
