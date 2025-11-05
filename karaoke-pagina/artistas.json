@@ -673,11 +673,11 @@
   "imagen": "img/queen.jpg",
   "genero": "Rock",
   "canciones": [
-    { "idCancion": "Q1", "titulo": "Bohemian Rhapsody", "duracion": "05:55", "video": "" },
-    { "idCancion": "Q2", "titulo": "Don't Stop Me Now", "duracion": "03:29", "video": "" },
-    { "idCancion": "Q3", "titulo": "We Will Rock You", "duracion": "02:02", "video": "" },
-    { "idCancion": "Q4", "titulo": "We Are the Champions", "duracion": "03:00", "video": "" },
-    { "idCancion": "Q5", "titulo": "Another One Bites the Dust", "duracion": "03:35", "video": "" }
+    { "idCancion": "Q1", "titulo": "Bohemian Rhapsody", "duracion": "05:55", "video": "videosKaraoke/bohemianRhapsody.mp4" },
+    { "idCancion": "Q2", "titulo": "Don't Stop Me Now", "duracion": "03:29", "video": "videosKaraoke/dontStop.mp4" },
+    { "idCancion": "Q3", "titulo": "We Will Rock You", "duracion": "02:02", "video": "videosKaraoke/rockYou.mp4" },
+    { "idCancion": "Q4", "titulo": "We Are the Champions", "duracion": "03:00", "video": "videosKaraoke/champions.mp4" },
+    { "idCancion": "Q5", "titulo": "Another One Bites the Dust", "duracion": "03:35", "video": "videosKaraoke/dust.mp4" }
   ]
 },
 {
