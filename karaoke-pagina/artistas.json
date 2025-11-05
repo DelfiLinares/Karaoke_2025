@@ -144,55 +144,55 @@
         "idCancion": "RH1",
         "titulo": "Creep",
         "duracion": "03:57",
-        "video": ""
+        "video": "videosKaraoke/creep.mp4"
       },
       {
         "idCancion": "RH2",
         "titulo": "Just",
         "duracion": "04:05",
-        "video": ""
+        "video": "videosKaraoke/just.mp4"
       },
       {
         "idCancion": "RH3",
         "titulo": "No Surprises",
         "duracion": "03:48",
-        "video": ""
+        "video": "videosKaraoke/noSurprises.mp4"
       },
       {
         "idCancion": "RH4",
         "titulo": "Karma Police",
         "duracion": "04:23",
-        "video": ""
+        "video": "videosKaraoke/karmaPolice.mp4"
       },
       {
         "idCancion": "RH5",
         "titulo": "High and Dry",
         "duracion": "04:17",
-        "video": ""
+        "video": "videosKaraoke/highAndDry.mp4"
       },
       {
         "idCancion": "RH6",
         "titulo": "Fake Plastic Trees",
         "duracion": "04:50",
-        "video": ""
+        "video": "videosKaraoke/fakeTrees.mp4"
       },
       {
         "idCancion": "RH7",
         "titulo": "Paranoid Android",
         "duracion": "06:23",
-        "video": ""
+        "video": "videosKaraoke/paranoidAndroid.mp4"
       },
       {
         "idCancion": "RH8",
         "titulo": "Street Spirit (Fade Out)",
         "duracion": "04:13",
-        "video": ""
+        "video": "videosKaraoke/streetSpirit.mp4"
       },
       {
         "idCancion": "RH9",
         "titulo": "Exit Music (For a Film)",
         "duracion": "04:24",
-        "video": ""
+        "video": "videosKaraoke/exitMusic.mp4"
       }
     ]
   },
