@@ -519,16 +519,16 @@
   "imagen": "img/adele.webp",
   "genero": "Pop",
   "canciones": [
-    { "idCancion": "AD1", "titulo": "Hello", "duracion": "04:55", "video": "" },
-    { "idCancion": "AD2", "titulo": "Someone Like You", "duracion": "04:45", "video": "" },
-    { "idCancion": "AD3", "titulo": "Rolling in the Deep", "duracion": "03:48", "video": "" },
-    { "idCancion": "AD4", "titulo": "Set Fire to the Rain", "duracion": "04:02", "video": "" },
-    { "idCancion": "AD5", "titulo": "Send My Love (To Your New Lover)", "duracion": "03:43", "video": "" },
-    { "idCancion": "AD6", "titulo": "Easy On Me", "duracion": "03:45", "video": "" },
-    { "idCancion": "AD7", "titulo": "Skyfall", "duracion": "04:46", "video": "" },
-    { "idCancion": "AD8", "titulo": "When We Were Young", "duracion": "04:51", "video": "" },
-    { "idCancion": "AD9", "titulo": "Water Under the Bridge", "duracion": "04:00", "video": "" },
-    { "idCancion": "AD10", "titulo": "Turning Tables", "duracion": "04:10", "video": "" }
+    { "idCancion": "AD1", "titulo": "Hello", "duracion": "04:55", "video": "videosKaraoke/hello.mp4" },
+    { "idCancion": "AD2", "titulo": "Someone Like You", "duracion": "04:45", "video": "videosKaraoke/someoneLikeYou.mp4" },
+    { "idCancion": "AD3", "titulo": "Rolling in the Deep", "duracion": "03:48", "video": "videosKaraoke/rollingInTheDeep.mp4" },
+    { "idCancion": "AD4", "titulo": "Set Fire to the Rain", "duracion": "04:02", "video": "videosKaraoke/setFireToTheRain.mp4" },
+    { "idCancion": "AD5", "titulo": "Send My Love (To Your New Lover)", "duracion": "03:43", "video": "videosKaraoke/sendMyLove.mp4" },
+    { "idCancion": "AD6", "titulo": "Easy On Me", "duracion": "03:45", "video": "videosKaraoke/easyOnMe.mp4" },
+    { "idCancion": "AD7", "titulo": "Skyfall", "duracion": "04:46", "video": "videosKaraoke/skyfall.mp4" },
+    { "idCancion": "AD8", "titulo": "When We Were Young", "duracion": "04:51", "video": "videosKaraoke/whenWeWereYoung.mp4" },
+    { "idCancion": "AD9", "titulo": "Water Under the Bridge", "duracion": "04:00", "video": "videosKaraoke/waterUnderTheBridge.mp4" },
+    { "idCancion": "AD10", "titulo": "Turning Tables", "duracion": "04:10", "video": "videosKaraoke/turningTables.mp4" }
   ]
 },
 {
