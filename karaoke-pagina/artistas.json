@@ -400,31 +400,31 @@
       "idCancion": "LR4",
       "titulo": "Doin' Time",
       "duracion": "03:21",
-      "video": " videosKaraoke/dointime.mp4"
+      "video": "videosKaraoke/dointime.mp4"
     },
     {
       "idCancion": "LR5",
       "titulo": "West Coast",
       "duracion": "04:17",
-      "video": " videosKaraoke/westcoast.mp4"
+      "video": "videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "National Anthem",
       "duracion": "03:51",
-      "video": " videosKaraoke/westcoast.mp4"
+      "video": "videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Diet Mountain Dew",
       "duracion": "04:17",
-      "video": " videosKaraoke/westcoast.mp4"
+      "video": "videosKaraoke/westcoast.mp4"
     },
    {
       "idCancion": "LR5",
       "titulo": "Video Games",
       "duracion": "4:17",
-      "video": " videosKaraoke/westcoast.mp4"
+      "video": "videosKaraoke/westcoast.mp4"
     }]
 },
 {
@@ -437,61 +437,61 @@
       "idCancion": "BE1",
       "titulo": "Bad Guy",
       "duracion": "03:14",
-      "video": " videosKaraoke/badGuy.mp4"
+      "video": "videosKaraoke/badGuy.mp4"
     },
     {
       "idCancion": "BE2",
       "titulo": "When The Party's Over",
       "duracion": "03:16",
-      "video": " videosKaraoke/whenThePartysOver.mp4"
+      "video": "videosKaraoke/whenThePartysOver.mp4"
     },
     {
       "idCancion": "BE3",
       "titulo": "Ocean Eyes",
       "duracion": "03:20",
-      "video": " videosKaraoke/oceanEyes.mp4"
+      "video": "videosKaraoke/oceanEyes.mp4"
     },
     {
       "idCancion": "BE4",
       "titulo": "Therefore I Am",
       "duracion": "02:54",
-      "video": " videosKaraoke/thereforeIAm.mp4"
+      "video": "videosKaraoke/thereforeIAm.mp4"
     },
     {
       "idCancion": "BE5",
       "titulo": "Everything I Wanted",
       "duracion": "04:05",
-      "video": " videosKaraoke/everythingIWanted.mp4"
+      "video": "videosKaraoke/everythingIWanted.mp4"
     },
     {
       "idCancion": "BE6",
       "titulo": "Lovely (con Khalid)",
       "duracion": "03:21",
-      "video": " videosKaraoke/lovely.mp4"
+      "video": "videosKaraoke/lovely.mp4"
     },
     {
       "idCancion": "BE7",
       "titulo": "Bury a Friend",
       "duracion": "03:13",
-      "video": " videosKaraoke/buryAFriend.mp4"
+      "video": "videosKaraoke/buryAFriend.mp4"
     },
     {
       "idCancion": "BE8",
       "titulo": "My Future",
       "duracion": "03:28",
-      "video": " videosKaraoke/myFuture.mp4"
+      "video": "videosKaraoke/myFuture.mp4"
     },
     {
       "idCancion": "BE9",
       "titulo": "Your Power",
       "duracion": "04:05",
-      "video": " videosKaraoke/yourPower.mp4"
+      "video": "videosKaraoke/yourPower.mp4"
     },
     {
       "idCancion": "BE10",
       "titulo": "Happier Than Ever",
       "duracion": "04:58",
-      "video": " videosKaraoke/happierThanEver.mp4"
+      "video": "videosKaraoke/happierThanEver.mp4"
     }
   ]
 },
@@ -501,16 +501,16 @@
   "imagen": "img/ed.webp",
   "genero": "Pop",
   "canciones": [
-    { "idCancion": "ES1", "titulo": "Shape of You", "duracion": "03:53", "video": "" },
-    { "idCancion": "ES2", "titulo": "Perfect", "duracion": "04:23", "video": "" },
-    { "idCancion": "ES3", "titulo": "Thinking Out Loud", "duracion": "04:41", "video": "" },
-    { "idCancion": "ES4", "titulo": "Photograph", "duracion": "04:19", "video": "" },
-    { "idCancion": "ES5", "titulo": "Castle on the Hill", "duracion": "04:21", "video": "" },
-    { "idCancion": "ES6", "titulo": "Galway Girl", "duracion": "02:50", "video": "" },
-    { "idCancion": "ES7", "titulo": "Happier", "duracion": "03:27", "video": "" },
-    { "idCancion": "ES8", "titulo": "I See Fire", "duracion": "05:00", "video": "" },
-    { "idCancion": "ES9", "titulo": "Shivers", "duracion": "03:27", "video": "" },
-    { "idCancion": "ES10", "titulo": "Bad Habits", "duracion": "03:51", "video": "" }
+    { "idCancion": "ES1", "titulo": "Shape of You", "duracion": "03:53", "video": "videosKaraoke/shapeOfYou.mp4" },
+    { "idCancion": "ES2", "titulo": "Perfect", "duracion": "04:23", "video": "videosKaraoke/perfect.mp4" },
+    { "idCancion": "ES3", "titulo": "Thinking Out Loud", "duracion": "04:41", "video": "videosKaraoke/thinkingOutLoud.mp4" },
+    { "idCancion": "ES4", "titulo": "Photograph", "duracion": "04:19", "video": "videosKaraoke/photograph.mp4" },
+    { "idCancion": "ES5", "titulo": "Castle on the Hill", "duracion": "04:21", "video": "videosKaraoke/castleOnTheHill.mp4" },
+    { "idCancion": "ES6", "titulo": "Galway Girl", "duracion": "02:50", "video": "videosKaraoke/galwayGirl.mp4" },
+    { "idCancion": "ES7", "titulo": "Happier", "duracion": "03:27", "video": "videosKaraoke/happier.mp4" },
+    { "idCancion": "ES8", "titulo": "I See Fire", "duracion": "05:00", "video": "videosKaraoke/iSeeFire.mp4" },
+    { "idCancion": "ES9", "titulo": "Shivers", "duracion": "03:27", "video": "videosKaraoke/shivers.mp4" },
+    { "idCancion": "ES10", "titulo": "Bad Habits", "duracion": "03:51", "video": "videosKaraoke/badHabits.mp4" }
   ]
 },
 {
