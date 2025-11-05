@@ -632,10 +632,10 @@
   "imagen": "img/chayanne.jpg",
   "genero": "Latino",
   "canciones": [
-    { "idCancion": "CH1", "titulo": "Torero", "duracion": "03:41", "video": "" },
-    { "idCancion": "CH2", "titulo": "Dejaría Todo", "duracion": "04:00", "video": "" },
-    { "idCancion": "CH3", "titulo": "Un Siglo Sin Ti", "duracion": "04:23", "video": "" },
-    { "idCancion": "CH4", "titulo": "Salomé", "duracion": "03:37", "video": "" }
+    { "idCancion": "CH1", "titulo": "Torero", "duracion": "03:41", "video": "videosKaraoke/torero.mp4" },
+    { "idCancion": "CH2", "titulo": "Dejaría Todo", "duracion": "04:00", "video": "videosKaraoke/dejariaTodo.mp4" },
+    { "idCancion": "CH3", "titulo": "Un Siglo Sin Ti", "duracion": "04:23", "video": "videosKaraoke/sinTi.mp4" },
+    { "idCancion": "CH4", "titulo": "Salomé", "duracion": "03:37", "video": "videosKaraoke/salome.mp4" }
   ]
 },
 {
